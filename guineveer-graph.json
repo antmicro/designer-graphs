@@ -1,0 +1,216 @@
+{
+    "graphs": [
+        {
+            "id": "ebbfae16-85b2-4e3a-a1ec-ffc45380e180",
+            "nodes": [
+                {
+                    "id": "2ed71803-b8a5-41a8-9b5b-14bd4310414a",
+                    "position": {
+                        "x": -180,
+                        "y": 43
+                    },
+                    "width": 300,
+                    "twoColumn": true,
+                    "interfaces": [
+                        {
+                            "name": "axi",
+                            "id": "149b9e06-3870-4ad3-a1c4-16297b7e2d57",
+                            "direction": "inout",
+                            "side": "right",
+                            "sidePosition": 0
+                        }
+                    ],
+                    "properties": [],
+                    "enabledInterfaceGroups": [],
+                    "name": "Chipsalliance I3C Core",
+                    "instanceName": "Chipsalliance I3C Core"
+                },
+                {
+                    "id": "654d6147-b279-4c26-ada9-14c7e8f3a30c",
+                    "position": {
+                        "x": -173,
+                        "y": -210
+                    },
+                    "width": 300,
+                    "twoColumn": true,
+                    "interfaces": [
+                        {
+                            "name": "ifu_axi",
+                            "id": "edf8c394-07f3-4687-be34-2ffdaa3d41ee",
+                            "direction": "inout",
+                            "side": "right",
+                            "sidePosition": 0
+                        },
+                        {
+                            "name": "lsu_axi",
+                            "id": "deccf2b4-e753-4ad6-beb7-a4ea1bd367bf",
+                            "direction": "inout",
+                            "side": "right",
+                            "sidePosition": 1
+                        }
+                    ],
+                    "properties": [],
+                    "enabledInterfaceGroups": [],
+                    "name": "VeeR EL2",
+                    "instanceName": "VeeR EL2"
+                },
+                {
+                    "id": "c49f5a82-ded1-459b-8823-23a523b1284c",
+                    "position": {
+                        "x": 352,
+                        "y": -210
+                    },
+                    "width": 300,
+                    "twoColumn": true,
+                    "interfaces": [
+                        {
+                            "name": "veer_ifu",
+                            "id": "08968197-90fe-4024-bbd7-035d0c20d76e",
+                            "direction": "inout",
+                            "side": "left",
+                            "sidePosition": 0
+                        },
+                        {
+                            "name": "veer_isu",
+                            "id": "51e0670f-6e6b-47d9-b06d-28e210f9636f",
+                            "direction": "inout",
+                            "side": "left",
+                            "sidePosition": 1
+                        },
+                        {
+                            "name": "i3c",
+                            "id": "e2509262-6ee6-4e65-9b29-0f728426253f",
+                            "direction": "inout",
+                            "side": "left",
+                            "sidePosition": 2
+                        },
+                        {
+                            "name": "uart",
+                            "id": "5c4546fa-774e-46cb-92f3-82fc0637f56d",
+                            "direction": "inout",
+                            "side": "right",
+                            "sidePosition": 1
+                        },
+                        {
+                            "name": "mem",
+                            "id": "d9160f6b-9977-4625-95b7-7f41b04f6d93",
+                            "direction": "inout",
+                            "side": "right",
+                            "sidePosition": 0
+                        }
+                    ],
+                    "properties": [],
+                    "enabledInterfaceGroups": [],
+                    "name": "AXI Interconnect",
+                    "instanceName": "AXI Interconnect"
+                },
+                {
+                    "id": "fe157f36-8db1-4a7c-ad18-b24e20377562",
+                    "position": {
+                        "x": 826,
+                        "y": -81
+                    },
+                    "width": 300,
+                    "twoColumn": true,
+                    "interfaces": [
+                        {
+                            "name": "axi",
+                            "id": "cd64c91b-f8ea-447b-8d5e-f241643d3180",
+                            "direction": "inout",
+                            "side": "left",
+                            "sidePosition": 0
+                        },
+                        {
+                            "name": "ahb",
+                            "id": "3f1b4cff-0279-4c4b-a44c-9ae7957c102b",
+                            "direction": "inout",
+                            "side": "right",
+                            "sidePosition": 0
+                        }
+                    ],
+                    "properties": [],
+                    "enabledInterfaceGroups": [],
+                    "name": "AXI/AHB Bridge",
+                    "instanceName": "AXI/AHB Bridge"
+                },
+                {
+                    "id": "6223a609-0f14-43d8-a877-66f05f96e77f",
+                    "position": {
+                        "x": 827,
+                        "y": -257
+                    },
+                    "width": 300,
+                    "twoColumn": true,
+                    "interfaces": [
+                        {
+                            "name": "axi",
+                            "id": "0a733b59-f3a2-43ce-9382-ebd0cf25c564",
+                            "direction": "inout",
+                            "side": "left",
+                            "sidePosition": 0
+                        }
+                    ],
+                    "properties": [],
+                    "enabledInterfaceGroups": [],
+                    "name": "Guineveer SRAM",
+                    "instanceName": "Guineveer SRAM"
+                },
+                {
+                    "id": "f8413091-28be-401c-9b0d-37b7049bdd7c",
+                    "position": {
+                        "x": 1253,
+                        "y": -81
+                    },
+                    "width": 300,
+                    "twoColumn": true,
+                    "interfaces": [
+                        {
+                            "name": "ahb",
+                            "id": "6f5cd7b1-d80b-4a35-b73c-135bbbcfdfa5",
+                            "direction": "inout",
+                            "side": "left",
+                            "sidePosition": 0
+                        }
+                    ],
+                    "properties": [],
+                    "enabledInterfaceGroups": [],
+                    "name": "OpenTItan UART",
+                    "instanceName": "OpenTItan UART"
+                }
+            ],
+            "connections": [
+                {
+                    "id": "88860406-9165-4cc1-8b6f-826f9300a2ea",
+                    "from": "149b9e06-3870-4ad3-a1c4-16297b7e2d57",
+                    "to": "e2509262-6ee6-4e65-9b29-0f728426253f"
+                },
+                {
+                    "id": "273c7bf8-3320-4e7c-927b-4d58373d3409",
+                    "from": "deccf2b4-e753-4ad6-beb7-a4ea1bd367bf",
+                    "to": "51e0670f-6e6b-47d9-b06d-28e210f9636f"
+                },
+                {
+                    "id": "4b533a39-92dd-4b59-a0a2-7cce748e84e1",
+                    "from": "edf8c394-07f3-4687-be34-2ffdaa3d41ee",
+                    "to": "08968197-90fe-4024-bbd7-035d0c20d76e"
+                },
+                {
+                    "id": "3c8b1834-8212-4c59-b3c9-2e422fe0423a",
+                    "from": "0a733b59-f3a2-43ce-9382-ebd0cf25c564",
+                    "to": "d9160f6b-9977-4625-95b7-7f41b04f6d93"
+                },
+                {
+                    "id": "136d0845-4fb8-4b01-a3be-1d5a12ba9bce",
+                    "from": "5c4546fa-774e-46cb-92f3-82fc0637f56d",
+                    "to": "cd64c91b-f8ea-447b-8d5e-f241643d3180"
+                },
+                {
+                    "id": "177c43db-072f-465d-94e2-9a9b709234e4",
+                    "from": "3f1b4cff-0279-4c4b-a44c-9ae7957c102b",
+                    "to": "6f5cd7b1-d80b-4a35-b73c-135bbbcfdfa5"
+                }
+            ]
+        }
+    ],
+    "version": "20250623.14"
+}

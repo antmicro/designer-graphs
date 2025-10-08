@@ -1,0 +1,143 @@
+{
+    "version": "20250623.14",
+    "include": [
+        "relative://vsd-data/components-specification.json"
+    ],
+    "metadata": {
+        "editableTypes": true,
+        "styles": {
+            "__edited": {
+                "pill": {
+                    "color": "#CECECE",
+                    "text": "Custom"
+                }
+            },
+            "__new": {
+                "pill": {
+                    "color": "#CECECE",
+                    "text": "Custom"
+                }
+            }
+        },
+        "navbarItems": [
+            {
+                "name": "Order system described in the diagram",
+                "iconName": "Buy",
+                "procedureName": "custom_open_modal",
+                "requireResponse": false
+            }
+        ]
+    },
+    "nodes": [
+        {
+            "name": "Guineveer",
+            "layer": "",
+            "category": "Complex devices",
+            "description": "",
+            "interfaces": [],
+            "properties": []
+        },
+        {
+            "name": "Chipsalliance I3C Core",
+            "layer": "",
+            "category": "HW Blocks/I³C",
+            "description": "",
+            "interfaces": [
+                {
+                    "name": "axi",
+                    "direction": "inout"
+                }
+            ],
+            "properties": []
+        },
+        {
+            "name": "VeeR EL2",
+            "layer": "",
+            "category": "HW Blocks/Core",
+            "description": "",
+            "interfaces": [
+                {
+                    "name": "ifu_axi",
+                    "direction": "inout"
+                },
+                {
+                    "name": "lsu_axi",
+                    "direction": "inout"
+                }
+            ],
+            "properties": []
+        },
+        {
+            "name": "AXI Interconnect",
+            "layer": "",
+            "category": "HW Blocks/Interconnects",
+            "description": "",
+            "interfaces": [
+                {
+                    "name": "veer_ifu",
+                    "direction": "inout"
+                },
+                {
+                    "name": "veer_isu",
+                    "direction": "inout"
+                },
+                {
+                    "name": "i3c",
+                    "direction": "inout"
+                },
+                {
+                    "name": "uart",
+                    "direction": "inout"
+                },
+                {
+                    "name": "mem",
+                    "direction": "inout"
+                }
+            ],
+            "properties": []
+        },
+        {
+            "name": "AXI/AHB Bridge",
+            "layer": "",
+            "category": "HW Blocks/Other",
+            "description": "",
+            "interfaces": [
+                {
+                    "name": "axi",
+                    "direction": "inout"
+                },
+                {
+                    "name": "ahb",
+                    "direction": "inout"
+                }
+            ],
+            "properties": []
+        },
+        {
+            "name": "Guineveer SRAM",
+            "layer": "",
+            "category": "HW Blocks/SRAM",
+            "description": "",
+            "interfaces": [
+                {
+                    "name": "axi",
+                    "direction": "inout"
+                }
+            ],
+            "properties": []
+        },
+        {
+            "name": "OpenTItan UART",
+            "layer": "",
+            "category": "HW Blocks/UART",
+            "description": "",
+            "interfaces": [
+                {
+                    "name": "ahb",
+                    "direction": "inout"
+                }
+            ],
+            "properties": []
+        }
+    ]
+}

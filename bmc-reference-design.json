@@ -91,7 +91,7 @@
       ],
       "properties": [],
       "subgraphId": "ab1a9606-7c8d-4249-b24c-81e37f722383",
-      "icon": "https://raw.githubusercontent.com/antmicro/designer-media-files/main/dc-scm_carrier_board_with_osm.webp",
+      "icon": "https://raw.githubusercontent.com/antmicro/designer-media-files/main/dc-scm_carrier_board_with_osm.webp"
     },
     {
       "name": "2:1 Mux/Demux",

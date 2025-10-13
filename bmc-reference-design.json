@@ -356,7 +356,7 @@
       "properties": []
     },
     {
-      "name": "DC-SCM BMC Reference OSM",
+      "name": "OSM-L BMC SoM",
       "layer": "",
       "category": "Boards",
       "description": "",
@@ -2124,8 +2124,8 @@
           ],
           "properties": [],
           "enabledInterfaceGroups": [],
-          "name": "DC-SCM BMC Reference OSM",
-          "instanceName": "DC-SCM BMC Reference OSM",
+          "name": "OSM-L BMC SoM",
+          "instanceName": "OSM-L BMC SoM",
           "subgraph": "fd3b0d74-4d4f-4c68-8169-abe559836c76"
         }
       ],

@@ -798,24 +798,6 @@
       "properties": []
     },
     {
-      "category": "SoCs/Lattice Semiconductor/MachXO3D/MachXO3D 9400",
-      "interfaces": [
-        {
-          "direction": "inout",
-          "maxConnectionsCount": -1,
-          "name": "io",
-          "override": false,
-          "side": "left"
-        }
-      ],
-      "isCategory": true,
-      "urls": {
-        "designer_soc": "9400"
-      },
-      "icon": "https://raw.githubusercontent.com/antmicro/designer-media-files/main/lattice-semiconductor-lcmxo3d-9400hc-5bg400c.webp",
-      "includeName": "MachXO3D 9400"
-    },
-    {
       "category": "Mechanical/Server Fan",
       "icon": {
         "designer-media-icon": "server_fan.webp"
@@ -3948,7 +3930,7 @@
           ],
           "properties": [],
           "enabledInterfaceGroups": [],
-          "name": "MachXO3D 9400",
+          "name": "Lattice Semiconductor LCMXO3D-9400HC-5BG400C",
           "instanceName": "LCMXO3D-9400HC-5BG400C"
         }
       ],

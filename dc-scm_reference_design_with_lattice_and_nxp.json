@@ -827,25 +827,6 @@
       "includeName": "Server power supply"
     }
   ],
-  "metadata": {
-    "editableTypes": true,
-    "styles": {
-      "__edited": {
-        "pill": {
-          "color": "#CECECE",
-          "text": "Custom"
-        }
-      },
-      "__new": {
-        "pill": {
-          "color": "#CECECE",
-          "text": "Custom"
-        }
-      }
-    },
-    "connectionStyle": "orthogonal",
-    "movementStep": 25
-  },
   "graphs": [
     {
       "id": "3af1d7a1-7271-4be0-901f-4eac20b60eab",

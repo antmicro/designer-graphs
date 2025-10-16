@@ -861,14 +861,6 @@
         }
       }
     },
-    "navbarItems": [
-      {
-        "name": "Order system described in the diagram",
-        "iconName": "Buy",
-        "procedureName": "custom_open_modal",
-        "requireResponse": false
-      }
-    ],
     "connectionStyle": "orthogonal",
     "movementStep": 25
   },

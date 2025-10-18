@@ -848,27 +848,6 @@
   },
   "graphs": [
     {
-      "id": "3af1d7a1-7271-4be0-901f-4eac20b60eab",
-      "nodes": [
-        {
-          "id": "103e4127-2014-4461-b52a-4731ac0ef349",
-          "position": {
-            "x": 700,
-            "y": 200
-          },
-          "width": 300,
-          "twoColumn": false,
-          "interfaces": [],
-          "properties": [],
-          "enabledInterfaceGroups": [],
-          "name": "2025 OCP Global Summit demo",
-          "instanceName": "2025 OCP Global Summit demo",
-          "subgraph": "6dbcdab0-b38c-4e24-9bc1-a43e377b4eb3"
-        }
-      ],
-      "connections": []
-    },
-    {
       "id": "6dbcdab0-b38c-4e24-9bc1-a43e377b4eb3",
       "nodes": [
         {

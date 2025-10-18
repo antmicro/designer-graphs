@@ -30,7 +30,16 @@
     },
     "nodes": [
         {
-            "name": "PC running LeRobot",
+            "name": "Complete teleoperation setup",
+            "category": "Complex devices",
+            "description": "",
+            "style": [
+                "__edited"
+            ],
+            "subgraphId": "05df63b3-bbc7-47ad-98fd-6c2c2ac90202"
+        },
+        {
+            "name": "Control PC",
             "layer": "",
             "category": "Others",
             "description": "",
@@ -107,7 +116,7 @@
             "subgraphId": "4d73a1b3-4c2a-4bcc-aadb-07719d90ed64"
         },
         {
-            "name": "16x channel analog mux",
+            "name": "16-channel analog mux",
             "layer": "",
             "category": "Interfacing/Analog Mux/",
             "description": "",
@@ -230,8 +239,8 @@
                     ],
                     "properties": [],
                     "enabledInterfaceGroups": [],
-                    "name": "PC running LeRobot",
-                    "instanceName": "PC running LeRobot"
+                    "name": "Control PC",
+                    "instanceName": "Control PC"
                 },
                 {
                     "id": "51a951d4-8a44-42a9-8fd0-f32ade4eb3dd",
@@ -1041,8 +1050,8 @@
                     ],
                     "properties": [],
                     "enabledInterfaceGroups": [],
-                    "name": "16x channel analog mux",
-                    "instanceName": "16x channel analog mux"
+                    "name": "16-channel analog mux",
+                    "instanceName": "16-channel analog mux"
                 },
                 {
                     "id": "2645271d-7195-4ebe-9ad3-07ddb0ea0037",
@@ -1532,6 +1541,5 @@
                 }
             ]
         }
-    ],
-    "entryGraph": "05df63b3-bbc7-47ad-98fd-6c2c2ac90202"
+    ]
 }

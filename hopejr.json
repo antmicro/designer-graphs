@@ -202,27 +202,6 @@
     ],
     "graphs": [
         {
-            "id": "8821c46e-1e43-4a49-9e82-046e03f11837",
-            "nodes": [
-                {
-                    "id": "cb44d9fe-c21f-4ace-ac30-8d654b99963d",
-                    "position": {
-                        "x": 1073,
-                        "y": 301
-                    },
-                    "width": 300,
-                    "twoColumn": false,
-                    "interfaces": [],
-                    "properties": [],
-                    "enabledInterfaceGroups": [],
-                    "name": "Complete teleoperation setup",
-                    "instanceName": "Complete teleoperation setup",
-                    "subgraph": "05df63b3-bbc7-47ad-98fd-6c2c2ac90202"
-                }
-            ],
-            "connections": []
-        },
-        {
             "id": "7eefbfdd-8818-4e1f-9dd7-0c752ca78c0b",
             "nodes": [
                 {
@@ -599,7 +578,7 @@
                     "properties": [],
                     "enabledInterfaceGroups": [],
                     "name": "HopeJR Homunculus PCB",
-                    "instanceName": "HopeJR Homunculus PCB--0",
+                    "instanceName": "HopeJR Homunculus PCB",
                     "subgraph": "25a9fb10-f6e0-4ef4-aaef-5987b9d61ca0"
                 },
                 {
@@ -1020,7 +999,7 @@
                     "properties": [],
                     "enabledInterfaceGroups": [],
                     "name": "HopeJR Homunculus PCB",
-                    "instanceName": "HopeJR Homunculus PCB--1",
+                    "instanceName": "HopeJR Homunculus PCB",
                     "subgraph": "25a9fb10-f6e0-4ef4-aaef-5987b9d61ca0"
                 }
             ],
@@ -2069,6 +2048,5 @@
             ],
             "connections": []
         }
-    ],
-    "entryGraph": "8821c46e-1e43-4a49-9e82-046e03f11837"
+    ]
 }

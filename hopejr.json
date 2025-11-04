@@ -287,7 +287,7 @@
                     "properties": [],
                     "enabledInterfaceGroups": [],
                     "name": "Espressif Systems ESP32-C3",
-                    "instanceName": "Espressif Systems ESP32-C3"
+                    "instanceName": "ESP32-C3"
                 }
             ],
             "connections": []
@@ -1840,8 +1840,7 @@
                     "properties": [],
                     "enabledInterfaceGroups": [],
                     "name": "espressif-systems-esp32-c3-wroom-02-n4",
-                    "instanceName": "ESP32-C3-WROOM-02-N4",
-                    "subgraph": "ed4ac809-de8d-4659-964c-66d04dac5ba0"
+                    "instanceName": "ESP32-C3-WROOM-02-N4"
                 }
             ],
             "connections": [
@@ -1956,97 +1955,6 @@
                     "to": "fe672994-d144-45c6-8126-44e34da737e3"
                 }
             ]
-        },
-        {
-            "id": "ed4ac809-de8d-4659-964c-66d04dac5ba0",
-            "nodes": [
-                {
-                    "id": "c6a47e33-2afe-4ad9-bb6c-711b9b839410",
-                    "position": {
-                        "x": 1000,
-                        "y": 600
-                    },
-                    "width": 300,
-                    "twoColumn": true,
-                    "interfaces": [
-                        {
-                            "name": "flash",
-                            "id": "5e087f79-c585-40a4-82a5-0c2a9644fd59",
-                            "direction": "inout",
-                            "side": "left",
-                            "sidePosition": 0
-                        },
-                        {
-                            "name": "i2c0",
-                            "id": "3cae771d-a42e-448f-aac7-bb7ee5c5189c",
-                            "direction": "inout",
-                            "side": "left",
-                            "sidePosition": 1
-                        },
-                        {
-                            "name": "spi2",
-                            "id": "a8e39172-ab13-4c26-a058-3c65d0f46161",
-                            "direction": "inout",
-                            "side": "left",
-                            "sidePosition": 2
-                        },
-                        {
-                            "name": "uart0",
-                            "id": "5eee2728-c2ed-4e8e-b002-1f820e500004",
-                            "direction": "inout",
-                            "side": "left",
-                            "sidePosition": 3
-                        },
-                        {
-                            "name": "usb_serial",
-                            "id": "a5777a8d-36de-4bf1-b597-3cbb9bab9a28",
-                            "direction": "inout",
-                            "side": "left",
-                            "sidePosition": 4
-                        },
-                        {
-                            "name": "adc0",
-                            "id": "3703290f-e7da-4016-af64-a4ddd93f4e7e",
-                            "direction": "inout",
-                            "side": "right",
-                            "sidePosition": 0
-                        },
-                        {
-                            "name": "gpio0",
-                            "id": "61e04d3a-4c38-4197-afc5-696f868a414e",
-                            "direction": "inout",
-                            "side": "right",
-                            "sidePosition": 1
-                        },
-                        {
-                            "name": "i2s",
-                            "id": "e447a155-cb2b-4946-a362-6ec4d3e05ddf",
-                            "direction": "inout",
-                            "side": "right",
-                            "sidePosition": 2
-                        },
-                        {
-                            "name": "twai",
-                            "id": "6ea70cd9-d2a2-4f02-86b0-1b2cb2774923",
-                            "direction": "inout",
-                            "side": "right",
-                            "sidePosition": 3
-                        },
-                        {
-                            "name": "uart1",
-                            "id": "8432b81a-193b-4324-bfc6-bbc9b65eab09",
-                            "direction": "inout",
-                            "side": "right",
-                            "sidePosition": 4
-                        }
-                    ],
-                    "properties": [],
-                    "enabledInterfaceGroups": [],
-                    "name": "Espressif Systems ESP32-C3",
-                    "instanceName": "ESP32-C3"
-                }
-            ],
-            "connections": []
         }
     ]
 }

@@ -33,9 +33,6 @@
             "name": "Complete teleoperation setup",
             "category": "Complex devices",
             "description": "",
-            "style": [
-                "__edited"
-            ],
             "subgraphId": "05df63b3-bbc7-47ad-98fd-6c2c2ac90202"
         },
         {
@@ -53,10 +50,7 @@
                     ]
                 }
             ],
-            "properties": [],
-            "style": [
-                "__edited"
-            ]
+            "properties": []
         },
         {
             "category": "Mechanical/HopeJR Humanoid Arm Assembly",
@@ -70,7 +64,6 @@
                     "name": "ttl"
                 }
             ],
-            "style": "__edited",
             "includeName": "HopeJR Humanoid Arm Assembly"
         },
         {
@@ -87,10 +80,7 @@
                     "name": "ttl"
                 }
             ],
-            "properties": [],
-            "style": [
-                "__edited"
-            ]
+            "properties": []
         },
         {
             "category": "Complex devices/HopeJR Exoskeleton Arm",
@@ -139,10 +129,7 @@
                     ]
                 }
             ],
-            "properties": [],
-            "style": [
-                "__edited"
-            ]
+            "properties": []
         },
         {
             "category": "Boards/HopeJR Homunculus PCB",
@@ -209,12 +196,123 @@
                 "designer_components": "espressif-systems-esp32-c3-wroom-02-n4",
                 "hwp": "components/espressif-systems-esp32-c3-wroom-02-n4"
             },
-            "style": "__edited",
             "includeName": "espressif-systems-esp32-c3-wroom-02-n4",
             "subgraphId": "7eefbfdd-8818-4e1f-9dd7-0c752ca78c0b"
         }
     ],
     "graphs": [
+        {
+            "id": "8821c46e-1e43-4a49-9e82-046e03f11837",
+            "nodes": [
+                {
+                    "id": "cb44d9fe-c21f-4ace-ac30-8d654b99963d",
+                    "position": {
+                        "x": 1073,
+                        "y": 301
+                    },
+                    "width": 300,
+                    "twoColumn": false,
+                    "interfaces": [],
+                    "properties": [],
+                    "enabledInterfaceGroups": [],
+                    "name": "Complete teleoperation setup",
+                    "instanceName": "Complete teleoperation setup",
+                    "subgraph": "05df63b3-bbc7-47ad-98fd-6c2c2ac90202"
+                }
+            ],
+            "connections": []
+        },
+        {
+            "id": "7eefbfdd-8818-4e1f-9dd7-0c752ca78c0b",
+            "nodes": [
+                {
+                    "id": "acdf0b23-8719-4a7d-a7af-e65be1223f61",
+                    "position": {
+                        "x": 1000,
+                        "y": 600
+                    },
+                    "width": 300,
+                    "twoColumn": true,
+                    "interfaces": [
+                        {
+                            "name": "flash",
+                            "id": "fc9202c4-3522-400a-bc56-b4ee9904e919",
+                            "direction": "inout",
+                            "side": "left",
+                            "sidePosition": 0
+                        },
+                        {
+                            "name": "i2c0",
+                            "id": "52b23d9a-0152-43d9-a7ed-07135f930576",
+                            "direction": "inout",
+                            "side": "left",
+                            "sidePosition": 1
+                        },
+                        {
+                            "name": "spi2",
+                            "id": "e2b3eeaf-b523-421e-b6f5-ccd28583b5da",
+                            "direction": "inout",
+                            "side": "left",
+                            "sidePosition": 2
+                        },
+                        {
+                            "name": "uart0",
+                            "id": "7e1548a8-83fb-4ed0-878b-21c0c2f801c5",
+                            "direction": "inout",
+                            "side": "left",
+                            "sidePosition": 3
+                        },
+                        {
+                            "name": "usb_serial",
+                            "id": "c7ee9b53-1ca7-4e33-9984-4edf7bb98513",
+                            "direction": "inout",
+                            "side": "left",
+                            "sidePosition": 4
+                        },
+                        {
+                            "name": "adc0",
+                            "id": "1046f1bf-1ee2-43de-80a8-a5d45fc0cd5f",
+                            "direction": "inout",
+                            "side": "right",
+                            "sidePosition": 0
+                        },
+                        {
+                            "name": "gpio0",
+                            "id": "eef9cb3e-d6fe-44eb-9a7a-c283b3c0c635",
+                            "direction": "inout",
+                            "side": "right",
+                            "sidePosition": 1
+                        },
+                        {
+                            "name": "i2s",
+                            "id": "aa3f31c9-f9f0-496c-bb84-3a14972ba30f",
+                            "direction": "inout",
+                            "side": "right",
+                            "sidePosition": 2
+                        },
+                        {
+                            "name": "twai",
+                            "id": "c65b7de3-52f1-4156-820d-13e608b9f353",
+                            "direction": "inout",
+                            "side": "right",
+                            "sidePosition": 3
+                        },
+                        {
+                            "name": "uart1",
+                            "id": "6d4df1cd-91d2-422d-ad55-30a3c7b1451c",
+                            "direction": "inout",
+                            "side": "right",
+                            "sidePosition": 4
+                        }
+                    ],
+                    "properties": [],
+                    "enabledInterfaceGroups": [],
+                    "name": "Espressif Systems ESP32-C3",
+                    "instanceName": "Espressif Systems ESP32-C3"
+                }
+            ],
+            "connections": []
+        },
         {
             "id": "05df63b3-bbc7-47ad-98fd-6c2c2ac90202",
             "nodes": [
@@ -345,22 +443,22 @@
             ],
             "connections": [
                 {
-                    "id": "e00f062d-f1cd-4686-867f-a29eddc2a7b7",
+                    "id": "a43a9288-a160-4bb4-8476-498eb61394a6",
                     "from": "d0a1f4b7-692c-432f-bea9-47b6986502c6",
                     "to": "bb65a132-d412-4dc0-a2ed-795b088dfa04"
                 },
                 {
-                    "id": "fb89fff7-cbac-4715-8713-ea043d9ca0bc",
+                    "id": "c4ca2a2f-aa31-4b1c-baa9-fcb83b7c6cc2",
                     "from": "6ba1c3cf-6c13-477f-a85a-cb021d2b778d",
                     "to": "ed16556b-2ae0-4588-940b-056b569cbe61"
                 },
                 {
-                    "id": "cbefb667-d67d-4c0d-894f-cf2212490d54",
+                    "id": "5461aadd-4641-49e7-bde1-401ababa3689",
                     "from": "af10647b-2832-4b88-98cd-03fc7239aa54",
                     "to": "46f7cd1d-63c1-49ce-a7d3-c785fcc49136"
                 },
                 {
-                    "id": "0da1b8fa-e6ac-40a0-97ea-b8c380bb3e94",
+                    "id": "b8b0b84f-3c79-46c0-908d-b236af7a4ef4",
                     "from": "272da2ba-81a4-45b3-b765-bc9fd1a98677",
                     "to": "3f129db2-15a7-49c5-8f59-d2c45ffdec58"
                 }
@@ -501,6 +599,7 @@
                     "properties": [],
                     "enabledInterfaceGroups": [],
                     "name": "HopeJR Homunculus PCB",
+                    "instanceName": "HopeJR Homunculus PCB--0",
                     "subgraph": "25a9fb10-f6e0-4ef4-aaef-5987b9d61ca0"
                 },
                 {
@@ -921,168 +1020,77 @@
                     "properties": [],
                     "enabledInterfaceGroups": [],
                     "name": "HopeJR Homunculus PCB",
-                    "instanceName": "HopeJR Homunculus PCB",
+                    "instanceName": "HopeJR Homunculus PCB--1",
                     "subgraph": "25a9fb10-f6e0-4ef4-aaef-5987b9d61ca0"
                 }
             ],
             "connections": [
                 {
-                    "id": "a9c2bc22-c146-4afe-af53-cd1a0e67f34a",
+                    "id": "36dc0144-af9c-4a8f-9547-e20ba83a428a",
                     "from": "06222018-29dd-4e35-bc42-58aeb7b13934",
                     "to": "fc8b9f01-d587-43cf-863f-74360e0467d7"
                 },
                 {
-                    "id": "e1e1288a-990b-425d-ba63-e8f386d3a6db",
+                    "id": "979f84f3-21bb-4e11-8734-c0173dbfe668",
                     "from": "62c88f81-0cd6-4c7c-8bab-786160f92213",
                     "to": "46a02108-65df-42b5-ab28-667386590b78"
                 },
                 {
-                    "id": "a791ece6-d485-4c53-bd7d-18da58caa33c",
+                    "id": "475c9895-7017-417d-b05c-0a05991716d6",
                     "from": "c6b69109-9039-4af7-90c6-584acb8f4553",
                     "to": "bb28c0a8-0f8d-420d-ad71-3420da92ac64"
                 },
                 {
-                    "id": "6d4b3eec-9d19-464d-9440-6af8aee6e6ef",
+                    "id": "eb4c9c26-5ada-457d-a475-6afe78423a81",
                     "from": "36c85796-866b-4cd0-8948-fb03e470b0cf",
                     "to": "29f57ae5-2c2d-4c85-aa9a-6f1a2a97f95c"
                 },
                 {
-                    "id": "d6282f86-fe67-4892-b892-7b2b077d7e75",
+                    "id": "a48185ab-ac06-4966-8785-3e20b286287d",
                     "from": "3cbe88ad-95d9-4191-aff5-f731f2117957",
                     "to": "2f62e101-031b-4c81-89f5-3021d1e0744f"
                 },
                 {
-                    "id": "b7de4550-5e8b-401f-9e04-565639ac9089",
+                    "id": "e690917e-6994-4612-831b-c060736bc180",
                     "from": "ec3e0c1e-18c1-40f5-b526-fb3045f65f3f",
                     "to": "3d70544c-869b-434f-b0da-786a3057d711"
                 },
                 {
-                    "id": "426a5611-4018-4309-8742-46eb35c344a2",
+                    "id": "6ba327f2-2632-4db6-bdce-9d5d0f37bdb3",
                     "from": "37fb2f83-ea0f-4432-a1ec-9f911d6d7a0d",
                     "to": "c24aa2fa-f03a-40c5-ae66-60a89acc55e5"
                 },
                 {
-                    "id": "178443d5-7453-4f16-bac0-669077268d78",
+                    "id": "be6aac58-02ab-4702-b897-cb23d979b07f",
                     "from": "894b63f0-3dd9-4376-b93e-e9639dcdc5f9",
                     "to": "fffa9540-72f8-4f11-8363-6cb2a0ff52c8"
                 },
                 {
-                    "id": "78581e4f-bc59-4446-89b5-f76121577ea1",
+                    "id": "1d963ef3-464b-44fd-93a9-fec2e889dbfe",
                     "from": "8c4517b6-d7da-46a5-9dca-50d54119d7b3",
                     "to": "d55d4ebe-7281-41f3-9162-d4311ed575a4"
                 },
                 {
-                    "id": "5d049c7a-9bc3-45d9-857a-c3ce06b78a91",
+                    "id": "767426c7-56b2-4a0d-a0ea-c7743a65a415",
                     "from": "b97601c2-d7d6-4391-b6dc-e0ac48372894",
                     "to": "a23297f4-4dee-4965-9564-df2f20c382e3"
                 },
                 {
-                    "id": "0c601cdb-063b-4b6c-b929-9f5e78c60b64",
+                    "id": "0bbbb035-ff60-4a7c-b83d-98e6a0fc2800",
                     "from": "9d217085-3354-4518-a4bc-1e694a7a4d2e",
                     "to": "133c1e88-5737-4b30-a4f2-ad3948109ef3"
                 },
                 {
-                    "id": "139b9116-dabc-4cc5-91ef-912120516d06",
+                    "id": "29f12fb6-a885-439e-bf10-0af900cb791b",
                     "from": "6dd9cffb-d683-4f07-8542-19fff3eec915",
                     "to": "a5ff8d22-9c69-4c0b-b8e9-7f2c8033fb14"
                 },
                 {
-                    "id": "b6905dc2-57e7-4459-a501-aec4b241a914",
+                    "id": "5bfac93c-1ad9-427e-acab-d57861797f4a",
                     "from": "446b5c98-0a88-4248-8904-1210874fe5c4",
                     "to": "2386663c-17d0-4d5a-88a1-af49b2ba624f"
                 }
             ]
-        },
-        {
-            "id": "7eefbfdd-8818-4e1f-9dd7-0c752ca78c0b",
-            "nodes": [
-                {
-                    "id": "acdf0b23-8719-4a7d-a7af-e65be1223f61",
-                    "position": {
-                        "x": 1000,
-                        "y": 600
-                    },
-                    "width": 300,
-                    "twoColumn": true,
-                    "interfaces": [
-                        {
-                            "name": "flash",
-                            "id": "fc9202c4-3522-400a-bc56-b4ee9904e919",
-                            "direction": "inout",
-                            "side": "left",
-                            "sidePosition": 0
-                        },
-                        {
-                            "name": "i2c0",
-                            "id": "52b23d9a-0152-43d9-a7ed-07135f930576",
-                            "direction": "inout",
-                            "side": "left",
-                            "sidePosition": 1
-                        },
-                        {
-                            "name": "spi2",
-                            "id": "e2b3eeaf-b523-421e-b6f5-ccd28583b5da",
-                            "direction": "inout",
-                            "side": "left",
-                            "sidePosition": 2
-                        },
-                        {
-                            "name": "uart0",
-                            "id": "7e1548a8-83fb-4ed0-878b-21c0c2f801c5",
-                            "direction": "inout",
-                            "side": "left",
-                            "sidePosition": 3
-                        },
-                        {
-                            "name": "usb_serial",
-                            "id": "c7ee9b53-1ca7-4e33-9984-4edf7bb98513",
-                            "direction": "inout",
-                            "side": "left",
-                            "sidePosition": 4
-                        },
-                        {
-                            "name": "adc0",
-                            "id": "1046f1bf-1ee2-43de-80a8-a5d45fc0cd5f",
-                            "direction": "inout",
-                            "side": "right",
-                            "sidePosition": 0
-                        },
-                        {
-                            "name": "gpio0",
-                            "id": "eef9cb3e-d6fe-44eb-9a7a-c283b3c0c635",
-                            "direction": "inout",
-                            "side": "right",
-                            "sidePosition": 1
-                        },
-                        {
-                            "name": "i2s",
-                            "id": "aa3f31c9-f9f0-496c-bb84-3a14972ba30f",
-                            "direction": "inout",
-                            "side": "right",
-                            "sidePosition": 2
-                        },
-                        {
-                            "name": "twai",
-                            "id": "c65b7de3-52f1-4156-820d-13e608b9f353",
-                            "direction": "inout",
-                            "side": "right",
-                            "sidePosition": 3
-                        },
-                        {
-                            "name": "uart1",
-                            "id": "6d4df1cd-91d2-422d-ad55-30a3c7b1451c",
-                            "direction": "inout",
-                            "side": "right",
-                            "sidePosition": 4
-                        }
-                    ],
-                    "properties": [],
-                    "enabledInterfaceGroups": [],
-                    "name": "Espressif Systems ESP32-C3",
-                    "instanceName": "Espressif Systems ESP32-C3"
-                }
-            ],
-            "connections": []
         },
         {
             "id": "25a9fb10-f6e0-4ef4-aaef-5987b9d61ca0",
@@ -1859,112 +1867,112 @@
             ],
             "connections": [
                 {
-                    "id": "d10fe8ac-558e-4960-8797-a0899bc137d3",
+                    "id": "34fce0be-aeec-4f93-9c76-6367118a2f0b",
                     "from": "f5769c25-0231-430b-b428-306c838fc938",
                     "to": "d2296c38-41ee-4d60-a338-0cca54b7ba05"
                 },
                 {
-                    "id": "f3cfdfc1-efb8-4f7c-88f9-f63c2f0d53f1",
+                    "id": "b685c4f1-d12d-4cd4-a878-19b8c70cbaf3",
                     "from": "70733560-cc05-4c68-ae7f-803c996effe5",
                     "to": "d32a6f65-3823-42d5-9aea-f7dfa24e98b4"
                 },
                 {
-                    "id": "05803559-bb50-40da-9c53-490d6ecc1e4a",
+                    "id": "2018e48e-53a3-46cd-9a61-732235abd89d",
                     "from": "7ae652c9-46e6-46b7-87f2-d832470ae580",
                     "to": "4cfbf5b3-eb34-4113-9ebc-92295bca6e88"
                 },
                 {
-                    "id": "8691348c-0c5f-454f-ad05-d811fff56237",
+                    "id": "9b5a3ecb-004a-425e-b6af-deb1e58c24ec",
                     "from": "91844c66-c5a9-4e47-8b92-c414237740e9",
                     "to": "c19e58ba-02de-4970-8292-26d376097f6a"
                 },
                 {
-                    "id": "0cb733ab-3da4-4020-8af4-c329168e13c3",
+                    "id": "936698b6-79a0-403a-993f-435b4ef204d1",
                     "from": "65da78a1-7575-46d5-89dd-d4a1b3ba3fb8",
                     "to": "5d2cd2ce-ef11-43f6-8988-ed605d20bd84"
                 },
                 {
-                    "id": "a0544e80-2db2-49cb-9536-ecb1a890e75e",
+                    "id": "51c7040b-be56-44e5-8940-ef9d9f7b6f1c",
                     "from": "d9f3d930-3560-40e9-85b0-5f9d1db03820",
                     "to": "e563c9c4-912b-4dde-87e3-836cb3a22a93"
                 },
                 {
-                    "id": "765fb395-f83d-4a40-a2a8-ecd8e27c2306",
+                    "id": "28377c12-515a-4e21-a776-8b6ee9366e57",
                     "from": "15039631-b2ed-4f9b-9268-c7dd83972f00",
                     "to": "a84505d4-85ce-4106-b8e3-9ca68be4fb56"
                 },
                 {
-                    "id": "32df2b69-6eb4-47fe-b761-bcbce5181d2c",
+                    "id": "ff6f8bdc-6bf5-4fbe-ae2b-e33998de2965",
                     "from": "b2890132-354b-4b1d-87b9-96bd2828d186",
                     "to": "91de6660-3b9f-4f1f-a260-761fd9986ee7"
                 },
                 {
-                    "id": "5d487ba5-4336-477a-bb7f-ec17d119ba94",
+                    "id": "cbd6d2fe-152f-4598-9887-fea249c15fe9",
                     "from": "a4853cb9-d2f2-4b0f-9af8-7f2c7e5e0ac3",
                     "to": "7920f4c4-34b0-4ffd-b7c7-62900f31e4bc"
                 },
                 {
-                    "id": "68ab16ae-fe55-471e-b776-3239b0ec57bf",
+                    "id": "f4832f5b-ef8d-4751-a977-b751528bf076",
                     "from": "a45102cd-4b90-4bd1-b5fb-1ebcfac98659",
                     "to": "9890e248-94f2-47f2-8462-1cbed545769d"
                 },
                 {
-                    "id": "f40fdfb5-2aa9-4544-889a-23a77d4cd262",
+                    "id": "b00c7eab-ae34-47e2-8cc2-42b8cc0e0fa1",
                     "from": "de19d869-96d8-4354-99fd-a1f9a9422d71",
                     "to": "6ffd9b16-c7b0-4164-bc4d-67a8c2b536cf"
                 },
                 {
-                    "id": "5ba3f743-7e92-4abc-9b00-3ee5c1cd7cae",
+                    "id": "b886f07a-54f6-446d-b932-8b8501dc041f",
                     "from": "81117215-72df-4f4b-8cde-b292be151b10",
                     "to": "1c5d7edc-d6e8-471b-95c2-229f5686f4fe"
                 },
                 {
-                    "id": "7faef58e-9d0e-46e7-9aa9-3e85bbe31362",
+                    "id": "c5d26f3d-13ba-4933-8c7c-bc14155d73fd",
                     "from": "e47fef0e-10f8-422f-a2f6-fff5c9cf4210",
                     "to": "5b2e7bae-3465-4a8e-89ae-bcc886e5bb86"
                 },
                 {
-                    "id": "7cc19ba9-b993-4452-93ca-c27026429c61",
+                    "id": "854cabba-423b-4c46-99f5-db421d8da2f9",
                     "from": "462afef1-cabd-4e66-a4a2-ef0a1010c66c",
                     "to": "95e3a9e5-a48e-4c59-9dec-cede28f29d19"
                 },
                 {
-                    "id": "2c6ec99a-bff9-4b12-94ad-be1825e1bd26",
+                    "id": "468a9129-d5cf-4100-b236-1fe4047dbb04",
                     "from": "68c03d73-8b53-4e29-922a-8acdfb03dddf",
                     "to": "717d5199-c337-40e9-942f-32751df5a212"
                 },
                 {
-                    "id": "46ad6595-fe43-4730-bf5b-30802d826d53",
+                    "id": "1dbdcd93-5a7c-43c8-aa96-04f81b7faf32",
                     "from": "900c991e-e44a-4a4c-83ad-70430d4e6db6",
                     "to": "ca4b3e74-7ef8-4f96-a0e1-ad11333cf47e"
                 },
                 {
-                    "id": "46ac6dc5-2956-418f-be96-1f0946de8944",
+                    "id": "85154e3c-6af4-4557-8d7d-0d3ad2976ca6",
                     "from": "f9b239f0-e439-489c-8a5b-94bf65717bca",
                     "to": "749ba366-6580-4919-93b2-fb29275e62a5"
                 },
                 {
-                    "id": "ca3c67e0-1320-4db8-8bad-a65509229493",
+                    "id": "10432ca9-7b86-4a73-b500-1c7ad1ded777",
                     "from": "5f2cb692-0465-44c4-82fc-7c214974c98f",
                     "to": "e27a0cb2-4adc-4125-bd14-0b9d40af6577"
                 },
                 {
-                    "id": "e3b3bb93-0d49-403a-81f6-bde347fdc0a5",
+                    "id": "b86c1e93-e1ac-4718-9501-46986882f7f6",
                     "from": "1d2d059a-4e88-47d0-af06-8c61e5c15bc3",
                     "to": "48122a32-2049-49fd-8f3d-fbc0fe2c15f3"
                 },
                 {
-                    "id": "843456bd-1989-49a0-8008-398e981e0de6",
+                    "id": "e60686f9-6a64-4075-818f-322b9d933b11",
                     "from": "d753979e-3258-42fe-8663-9531357cff7b",
                     "to": "fbdb0902-7550-4ebf-9984-57962297eaed"
                 },
                 {
-                    "id": "dad21f56-1fec-476d-ad1b-76147603bf83",
+                    "id": "9f61ad28-3e41-45e3-803d-32a1524b72e8",
                     "from": "c551ffd4-1f01-4d7e-9992-604d0b2e651d",
                     "to": "c48388d3-5614-48ee-b698-8607435f184e"
                 },
                 {
-                    "id": "90911572-e92f-4cab-92e4-b6839f00b6c1",
+                    "id": "ff74c0ab-1ddb-4c66-b93e-3eee95b07f63",
                     "from": "01def5e0-cde0-4a95-b367-dde1923d6567",
                     "to": "fe672994-d144-45c6-8126-44e34da737e3"
                 }
@@ -2061,5 +2069,6 @@
             ],
             "connections": []
         }
-    ]
+    ],
+    "entryGraph": "8821c46e-1e43-4a49-9e82-046e03f11837"
 }

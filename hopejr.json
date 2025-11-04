@@ -2042,7 +2042,7 @@
                     ],
                     "properties": [],
                     "enabledInterfaceGroups": [],
-                    "name": "Espressif Systems ESP32-C3",
+                    "name": "ESP32-C3",
                     "instanceName": "Espressif Systems ESP32-C3"
                 }
             ],

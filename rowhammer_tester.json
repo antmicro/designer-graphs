@@ -1,8 +1,6 @@
 {
   "version": "20250623.14",
-  "include": [
-    "relative://vsd-data/components-specification.json"
-  ],
+  "include": ["relative://vsd-data/components-specification.json"],
   "metadata": {
     "editableTypes": true,
     "styles": {
@@ -251,38 +249,32 @@
       "isCategory": true
     },
     {
-      "name": "MTC8C1084S1SC48BA1",
+      "name": "Micron Technology MTC8C1084S1SC48BA1",
       "layer": "",
       "category": "Memory/DDR/SO-DIMM DDR5",
       "description": "",
       "interfaces": [
         {
           "type": "so-dimm ddr5",
-          "name": "so-dimm ddr5"
+          "name": "SO-DIMM DDR5"
         }
       ],
-      "extends": [
-        "SO-DIMM DDR5"
-      ],
-      "properties": [],
-      "icon": "https://raw.githubusercontent.com/antmicro/designer-media-files/refs/heads/main/mtc8c1084s1sc48ba1.webp"
+      "extends": ["SO-DIMM DDR5"],
+      "properties": []
     },
     {
-      "name": "MTC10F1084S1RC48BA1R",
+      "name": "Micron Technology MTC10F1084S1RC48BA1R",
       "layer": "",
       "category": "Memory/DDR/RDIMM DDR5",
       "description": "",
       "interfaces": [
         {
           "type": "rdimm ddr5",
-          "name": "rdimm ddr5"
+          "name": "RDIMM DDR5"
         }
       ],
-      "extends": [
-        "RDIMM DDR5"
-      ],
-      "properties": [],
-      "icon": "https://raw.githubusercontent.com/antmicro/designer-media-files/refs/heads/main/mtc10f1084s1rc48ba1r.webp"
+      "extends": ["RDIMM DDR5"],
+      "properties": []
     },
     {
       "name": "RDIMM DDR5 Testing Setup",
@@ -336,7 +328,7 @@
               "sidePosition": 0
             },
             {
-              "name": "so-dimm ddr5",
+              "name": "SO-DIMM DDR5",
               "id": "11b7fed2-5508-4b16-9a6c-2a54dd90bcb5",
               "direction": "inout",
               "side": "right",
@@ -452,7 +444,7 @@
           "twoColumn": true,
           "interfaces": [
             {
-              "name": "SO-DIMM DDR5 testbed interface",
+              "name": "SO-DIMM DDR5",
               "id": "b1f45927-af0e-4711-8103-fbe65b7ff462",
               "direction": "inout",
               "side": "left",
@@ -723,7 +715,7 @@
           "twoColumn": true,
           "interfaces": [
             {
-              "name": "so-dimm ddr5",
+              "name": "SO-DIMM DDR5",
               "id": "dbeabdf9-569c-4d7a-9372-9e65284aaa24",
               "direction": "inout",
               "side": "left",
@@ -732,8 +724,8 @@
           ],
           "properties": [],
           "enabledInterfaceGroups": [],
-          "name": "MTC8C1084S1SC48BA1",
-          "instanceName": "MTC8C1084S1SC48BA1"
+          "name": "Micron Technology MTC8C1084S1SC48BA1",
+          "instanceName": "Micron Technology MTC8C1084S1SC48BA1"
         }
       ],
       "connections": [
@@ -1614,7 +1606,7 @@
               "sidePosition": 1
             },
             {
-              "name": "rdimm ddr5",
+              "name": "RDIMM DDR5",
               "id": "cd292f45-f6cd-49e0-beec-648a0141a66d",
               "direction": "inout",
               "side": "right",
@@ -1680,7 +1672,7 @@
           "twoColumn": true,
           "interfaces": [
             {
-              "name": "rdimm ddr5",
+              "name": "RDIMM DDR5",
               "id": "15593bb4-3c37-4dfd-bdfb-46007bd884e4",
               "direction": "inout",
               "side": "left",
@@ -1689,8 +1681,8 @@
           ],
           "properties": [],
           "enabledInterfaceGroups": [],
-          "name": "MTC10F1084S1RC48BA1R",
-          "instanceName": "MTC10F1084S1RC48BA1R"
+          "name": "Micron Technology MTC10F1084S1RC48BA1R",
+          "instanceName": "Micron Technology MTC10F1084S1RC48BA1R"
         }
       ],
       "connections": [

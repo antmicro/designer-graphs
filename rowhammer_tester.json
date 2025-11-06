@@ -1,6 +1,8 @@
 {
   "version": "20250623.14",
-  "include": ["relative://vsd-data/components-specification.json"],
+  "include": [
+    "relative://vsd-data/components-specification.json"
+  ],
   "metadata": {
     "editableTypes": true,
     "styles": {
@@ -231,52 +233,6 @@
       "subgraphId": "74606e39-8763-4a6e-baff-003be7399955"
     },
     {
-      "name": "SO-DIMM DDR5",
-      "layer": "",
-      "category": "Memory/DDR/SO-DIMM DDR5",
-      "description": "",
-      "interfaces": [],
-      "properties": [],
-      "isCategory": true
-    },
-    {
-      "name": "RDIMM DDR5",
-      "layer": "",
-      "category": "Memory/DDR/RDIMM DDR5",
-      "description": "",
-      "interfaces": [],
-      "properties": [],
-      "isCategory": true
-    },
-    {
-      "name": "Micron Technology MTC8C1084S1SC48BA1",
-      "layer": "",
-      "category": "Memory/DDR/SO-DIMM DDR5",
-      "description": "",
-      "interfaces": [
-        {
-          "type": "so-dimm ddr5",
-          "name": "SO-DIMM DDR5"
-        }
-      ],
-      "extends": ["SO-DIMM DDR5"],
-      "properties": []
-    },
-    {
-      "name": "Micron Technology MTC10F1084S1RC48BA1R",
-      "layer": "",
-      "category": "Memory/DDR/RDIMM DDR5",
-      "description": "",
-      "interfaces": [
-        {
-          "type": "rdimm ddr5",
-          "name": "RDIMM DDR5"
-        }
-      ],
-      "extends": ["RDIMM DDR5"],
-      "properties": []
-    },
-    {
       "name": "RDIMM DDR5 Testing Setup",
       "layer": "",
       "category": "Complex devices",
@@ -288,328 +244,8 @@
   ],
   "graphs": [
     {
-      "id": "b30df073-0dac-442a-99ed-2d4e8d16f1b4",
-      "nodes": [
-        {
-          "id": "8f81573f-af64-4cd6-b265-00ab46456fd1",
-          "position": {
-            "x": 1000,
-            "y": 200
-          },
-          "width": 300,
-          "twoColumn": true,
-          "interfaces": [
-            {
-              "name": "hdmi",
-              "id": "5094b0a8-241e-4313-9c23-75461aa06c43",
-              "direction": "output",
-              "side": "left",
-              "sidePosition": 4
-            },
-            {
-              "name": "micro sd-card",
-              "id": "8a56d3ff-8823-4f10-8f65-155c05109a0d",
-              "direction": "inout",
-              "side": "left",
-              "sidePosition": 5
-            },
-            {
-              "name": "pcie x4 edge",
-              "id": "3dad06ef-74cb-4b0b-81f9-26d3875be1a0",
-              "direction": "inout",
-              "side": "left",
-              "sidePosition": 2
-            },
-            {
-              "name": "rj45",
-              "id": "497ef88a-b04a-42c4-9d61-79463183e0e7",
-              "direction": "inout",
-              "side": "left",
-              "sidePosition": 0
-            },
-            {
-              "name": "SO-DIMM DDR5",
-              "id": "11b7fed2-5508-4b16-9a6c-2a54dd90bcb5",
-              "direction": "inout",
-              "side": "right",
-              "sidePosition": 0
-            },
-            {
-              "name": "usb-c",
-              "id": "01a5b72d-668a-44e0-832d-88a4e1db015a",
-              "direction": "inout",
-              "side": "left",
-              "sidePosition": 1
-            },
-            {
-              "name": "power",
-              "id": "a5de6db4-4cef-47d5-873d-40db987df708",
-              "direction": "input",
-              "side": "left",
-              "sidePosition": 3
-            }
-          ],
-          "properties": [],
-          "enabledInterfaceGroups": [],
-          "name": "SO-DIMM DDR5 Tester",
-          "subgraph": "1d199c44-5d8c-4ed2-a57e-d635aa994a81"
-        },
-        {
-          "id": "8edd3d59-d8fc-44eb-9b0e-c55e4e310119",
-          "position": {
-            "x": 1500,
-            "y": 200
-          },
-          "width": 300,
-          "twoColumn": true,
-          "interfaces": [
-            {
-              "name": "so-dimm ddr5",
-              "id": "d808e706-cb89-4a49-a3ca-9d01c9895edb",
-              "direction": "inout",
-              "side": "left",
-              "sidePosition": 0
-            },
-            {
-              "name": "wire to board",
-              "id": "3536180a-a887-49ab-8335-06c403ef7fe7",
-              "direction": "inout",
-              "side": "right",
-              "sidePosition": 0
-            }
-          ],
-          "properties": [],
-          "enabledInterfaceGroups": [],
-          "name": "LPDDR5 Testbed",
-          "subgraph": "ace06ad6-68a8-4be9-8fd2-dd8fe8349030"
-        },
-        {
-          "id": "ce89a94b-94a1-4604-8354-877f3aab9593",
-          "position": {
-            "x": 500,
-            "y": 200
-          },
-          "width": 300,
-          "twoColumn": true,
-          "interfaces": [
-            {
-              "name": "usb-a",
-              "id": "345f3db4-3e00-4fa1-8a56-e49e09c22782",
-              "direction": "inout",
-              "side": "right",
-              "sidePosition": 1
-            },
-            {
-              "name": "rj45",
-              "id": "e99209a8-2631-4206-ab91-820bbc973229",
-              "direction": "inout",
-              "side": "right",
-              "sidePosition": 0
-            }
-          ],
-          "properties": [],
-          "enabledInterfaceGroups": [],
-          "name": "MGMT PC",
-          "instanceName": "MGMT PC"
-        }
-      ],
-      "connections": [
-        {
-          "id": "d429dee9-04e5-44b9-bda7-f3c7a767c3dd",
-          "from": "345f3db4-3e00-4fa1-8a56-e49e09c22782",
-          "to": "01a5b72d-668a-44e0-832d-88a4e1db015a"
-        },
-        {
-          "id": "3bb1729d-070a-4ac1-8f70-a230f338bbe9",
-          "from": "497ef88a-b04a-42c4-9d61-79463183e0e7",
-          "to": "e99209a8-2631-4206-ab91-820bbc973229"
-        },
-        {
-          "id": "6cfdcd13-c9fc-4a28-8b82-66b5fbda8af3",
-          "from": "d808e706-cb89-4a49-a3ca-9d01c9895edb",
-          "to": "11b7fed2-5508-4b16-9a6c-2a54dd90bcb5"
-        }
-      ]
-    },
-    {
-      "id": "ace06ad6-68a8-4be9-8fd2-dd8fe8349030",
-      "nodes": [
-        {
-          "id": "f9df1073-c84c-4cb2-81a9-989e5b32519e",
-          "position": {
-            "x": 800,
-            "y": 500
-          },
-          "width": 300,
-          "twoColumn": true,
-          "interfaces": [
-            {
-              "name": "SO-DIMM DDR5",
-              "id": "b1f45927-af0e-4711-8103-fbe65b7ff462",
-              "direction": "inout",
-              "side": "left",
-              "sidePosition": 0
-            },
-            {
-              "name": "i2c",
-              "id": "dcacd8bf-6d8f-4c65-a733-3d11181e7fbe",
-              "direction": "inout",
-              "side": "right",
-              "sidePosition": 0
-            },
-            {
-              "name": "ddr",
-              "id": "c100c73a-d68d-490b-acef-a646bf6834dd",
-              "direction": "inout",
-              "side": "right",
-              "sidePosition": 1
-            }
-          ],
-          "properties": [],
-          "enabledInterfaceGroups": [],
-          "name": "SO-DIMM DDR5 tester edge connector",
-          "instanceName": "SO-DIMM DDR5 tester edge connector"
-        },
-        {
-          "id": "ef641934-f10f-4364-80c1-3d4386b9e7cf",
-          "position": {
-            "x": 1500,
-            "y": 100
-          },
-          "width": 300,
-          "twoColumn": true,
-          "interfaces": [
-            {
-              "name": "i2c",
-              "id": "46b36c0f-e166-4581-b22f-22e0cafa8b49",
-              "direction": "inout",
-              "side": "left",
-              "sidePosition": 1
-            },
-            {
-              "name": "power",
-              "id": "97066528-bfea-4d63-887e-5b528da4c8fd",
-              "direction": "inout",
-              "side": "left",
-              "sidePosition": 0
-            }
-          ],
-          "properties": [
-            {
-              "name": "address (i2c)",
-              "id": "51b60152-bab5-4f38-9677-eae6e1a80eac",
-              "value": "0x68"
-            }
-          ],
-          "enabledInterfaceGroups": [],
-          "name": "Monolithic Power Systems MPM54304GMN-0001",
-          "instanceName": "Monolithic Power Systems MPM54304GMN-0001"
-        },
-        {
-          "id": "2e47147a-ca1f-47dc-ab02-fdaaaed161de",
-          "position": {
-            "x": 1514,
-            "y": 433
-          },
-          "width": 300,
-          "twoColumn": true,
-          "interfaces": [
-            {
-              "name": "i2c",
-              "id": "9f2dec14-7102-4cf0-a614-e92a9ec878f3",
-              "direction": "inout",
-              "side": "left",
-              "sidePosition": 0
-            }
-          ],
-          "properties": [
-            {
-              "name": "address (i2c)",
-              "id": "044a55cf-9d8f-4db3-bcd1-5a75d18de72f",
-              "value": "0x50"
-            }
-          ],
-          "enabledInterfaceGroups": [],
-          "name": "Microchip Technology AT24CS01-ST",
-          "instanceName": "Microchip Technology AT24CS01-ST"
-        },
-        {
-          "id": "a6690fa9-1650-4d9f-8945-0a70ee1e7053",
-          "position": {
-            "x": 1500,
-            "y": 700
-          },
-          "width": 300,
-          "twoColumn": true,
-          "interfaces": [
-            {
-              "name": "lpddr",
-              "id": "6908d954-1d10-47e9-873e-fd4c04ab1f9e",
-              "direction": "inout",
-              "side": "left",
-              "sidePosition": 0
-            }
-          ],
-          "properties": [],
-          "enabledInterfaceGroups": [],
-          "name": "Micron Technology MT62F1G32D4DR-031 WT:B",
-          "instanceName": "Micron Technology MT62F1G32D4DR-031 WT:B"
-        },
-        {
-          "id": "3cf155ca-c1e0-48cf-ae9f-fbd9cbfdce75",
-          "position": {
-            "x": 657,
-            "y": 201
-          },
-          "width": 300,
-          "twoColumn": true,
-          "interfaces": [
-            {
-              "name": "gpio",
-              "id": "915aa0fe-9dc7-4be0-be98-68c0cd77adcd",
-              "direction": "inout",
-              "side": "right",
-              "sidePosition": 0
-            },
-            {
-              "name": "wire to board",
-              "id": "9ca6504f-b34f-4f67-86af-30dc850a32ec",
-              "direction": "inout",
-              "side": "left",
-              "sidePosition": 0
-            }
-          ],
-          "properties": [],
-          "enabledInterfaceGroups": [],
-          "name": "JST Automotive Connectors SM04B-SRSS-TB(LF)(SN)",
-          "instanceName": "JST Automotive Connectors SM04B-SRSS-TB(LF)(SN)"
-        }
-      ],
-      "connections": [
-        {
-          "id": "eee6f8d0-445d-4f8a-b845-27c0aa812445",
-          "from": "dcacd8bf-6d8f-4c65-a733-3d11181e7fbe",
-          "to": "46b36c0f-e166-4581-b22f-22e0cafa8b49"
-        },
-        {
-          "id": "d22ba359-a49b-46f7-8ebe-002111d634da",
-          "from": "dcacd8bf-6d8f-4c65-a733-3d11181e7fbe",
-          "to": "9f2dec14-7102-4cf0-a614-e92a9ec878f3"
-        },
-        {
-          "id": "5bb84e35-9cc9-41f6-a3c9-d8a08b2d1141",
-          "from": "c100c73a-d68d-490b-acef-a646bf6834dd",
-          "to": "6908d954-1d10-47e9-873e-fd4c04ab1f9e"
-        },
-        {
-          "id": "113223e5-1a5f-4307-bdf7-5574ddca5abb",
-          "from": "915aa0fe-9dc7-4be0-be98-68c0cd77adcd",
-          "to": "46b36c0f-e166-4581-b22f-22e0cafa8b49"
-        }
-      ]
-    },
-    {
       "id": "74606e39-8763-4a6e-baff-003be7399955",
+      "name": "c",
       "nodes": [
         {
           "id": "b5ba2a22-e763-4de4-82c1-7bd10ced363b",
@@ -747,10 +383,154 @@
       ]
     },
     {
+      "id": "b30df073-0dac-442a-99ed-2d4e8d16f1b4",
+      "nodes": [
+        {
+          "id": "dae58c01-672e-4dc8-9f08-cb9086fed56a",
+          "position": {
+            "x": 1000,
+            "y": 200
+          },
+          "width": 300,
+          "twoColumn": true,
+          "interfaces": [
+            {
+              "name": "power",
+              "id": "b84ecfca-bcae-47fa-ab13-e1e843b1edcc",
+              "direction": "input",
+              "side": "left",
+              "sidePosition": 3
+            },
+            {
+              "name": "micro sd-card",
+              "id": "78706225-44b5-420d-86af-e1212dc76ced",
+              "direction": "inout",
+              "side": "left",
+              "sidePosition": 5
+            },
+            {
+              "name": "pcie x4 edge",
+              "id": "9169e73e-0d38-457f-aa20-3269960a58c4",
+              "direction": "inout",
+              "side": "left",
+              "sidePosition": 2
+            },
+            {
+              "name": "rj45",
+              "id": "85c1129b-c73b-4f3d-bd52-7ebc1d54b2e6",
+              "direction": "inout",
+              "side": "left",
+              "sidePosition": 0
+            },
+            {
+              "name": "so-dimm ddr5",
+              "id": "9ac00a6a-6f2d-465b-b7eb-7b7016bbeaf7",
+              "direction": "inout",
+              "side": "right",
+              "sidePosition": 0
+            },
+            {
+              "name": "usb-c",
+              "id": "c3bfeb96-68f5-4eb9-9b7b-ec810606e40e",
+              "direction": "inout",
+              "side": "left",
+              "sidePosition": 1
+            },
+            {
+              "name": "hdmi",
+              "id": "ffb7a392-e774-4e67-8925-f1cadb8b2fb9",
+              "direction": "output",
+              "side": "left",
+              "sidePosition": 4
+            }
+          ],
+          "properties": [],
+          "enabledInterfaceGroups": [],
+          "name": "SO-DIMM DDR5 Tester",
+          "subgraph": "1d199c44-5d8c-4ed2-a57e-d635aa994a81"
+        },
+        {
+          "id": "e2aade8d-de8d-4a25-9658-b25cfff34285",
+          "position": {
+            "x": 1500,
+            "y": 200
+          },
+          "width": 300,
+          "twoColumn": true,
+          "interfaces": [
+            {
+              "name": "so-dimm ddr5",
+              "id": "e46e0e41-9716-45b8-90f1-ce257feab85c",
+              "direction": "inout",
+              "side": "left",
+              "sidePosition": 0
+            },
+            {
+              "name": "wire to board",
+              "id": "51da37c7-4a4c-490a-ad74-0fc1b5e32a06",
+              "direction": "inout",
+              "side": "right",
+              "sidePosition": 0
+            }
+          ],
+          "properties": [],
+          "enabledInterfaceGroups": [],
+          "name": "LPDDR5 Testbed",
+          "subgraph": "ace06ad6-68a8-4be9-8fd2-dd8fe8349030"
+        },
+        {
+          "id": "52150124-9b49-461f-a9e8-54af703e187e",
+          "position": {
+            "x": 500,
+            "y": 200
+          },
+          "width": 300,
+          "twoColumn": true,
+          "interfaces": [
+            {
+              "name": "usb-a",
+              "id": "a343c8c7-c820-4f8b-bbfb-206571374721",
+              "direction": "inout",
+              "side": "right",
+              "sidePosition": 1
+            },
+            {
+              "name": "rj45",
+              "id": "4e3e1566-be6d-4cc5-b575-8dab7da6f335",
+              "direction": "inout",
+              "side": "right",
+              "sidePosition": 0
+            }
+          ],
+          "properties": [],
+          "enabledInterfaceGroups": [],
+          "name": "MGMT PC",
+          "instanceName": "MGMT PC"
+        }
+      ],
+      "connections": [
+        {
+          "id": "8ac84e7c-ff3c-4d46-bc57-1862dbfb2c28",
+          "from": "a343c8c7-c820-4f8b-bbfb-206571374721",
+          "to": "c3bfeb96-68f5-4eb9-9b7b-ec810606e40e"
+        },
+        {
+          "id": "cce4feae-7608-4199-8e6c-11065f60ba3a",
+          "from": "85c1129b-c73b-4f3d-bd52-7ebc1d54b2e6",
+          "to": "4e3e1566-be6d-4cc5-b575-8dab7da6f335"
+        },
+        {
+          "id": "4065abdc-2777-4646-85b9-80390b8f115d",
+          "from": "e46e0e41-9716-45b8-90f1-ce257feab85c",
+          "to": "9ac00a6a-6f2d-465b-b7eb-7b7016bbeaf7"
+        }
+      ]
+    },
+    {
       "id": "1d199c44-5d8c-4ed2-a57e-d635aa994a81",
       "nodes": [
         {
-          "id": "7cf8a6f2-f36a-427c-aca9-3bc12fdfd939",
+          "id": "9f6f8c8e-a927-43ac-aa1c-d38a424834ef",
           "position": {
             "x": -300,
             "y": 100
@@ -760,7 +540,7 @@
           "interfaces": [
             {
               "name": "io",
-              "id": "5c4bc579-648b-4ec6-bce5-0ca9124b3b6c",
+              "id": "c58abde2-a6ea-42f3-823b-c5e346422d2a",
               "direction": "inout",
               "side": "right",
               "sidePosition": 0
@@ -772,7 +552,7 @@
           "instanceName": "Slide Switch"
         },
         {
-          "id": "bdf36dd7-2f68-4271-bad8-4c04cd24ae84",
+          "id": "7d3372b7-05b5-4bf8-954d-a3cff91b16e3",
           "position": {
             "x": 100,
             "y": 560
@@ -782,21 +562,21 @@
           "interfaces": [
             {
               "name": "hdmi",
-              "id": "98ffd1c3-2b48-4177-85d3-87605479044c",
+              "id": "dc31284b-ec00-4e42-bd39-b5c531d27e40",
               "direction": "input",
               "side": "left",
               "sidePosition": 0
             },
             {
               "name": "ddc",
-              "id": "7ad16a5b-e331-4b3c-8f65-752c4a70bd27",
+              "id": "93c8380f-48c3-4a46-8682-8ebc70dbedac",
               "direction": "inout",
               "side": "right",
               "sidePosition": 1
             },
             {
               "name": "hdmi",
-              "id": "3f202ae2-c0c3-46c4-aee7-43360b7aa4e4",
+              "id": "9451560e-90a8-4bbb-9884-9b71399aaee7",
               "direction": "output",
               "side": "right",
               "sidePosition": 0
@@ -808,7 +588,7 @@
           "instanceName": "HDMI Connector"
         },
         {
-          "id": "0cde11f5-3e2d-432b-b002-d00f98ab4a75",
+          "id": "dd17312d-d33d-4c19-9993-eaeff2b9627c",
           "position": {
             "x": 100,
             "y": 760
@@ -818,14 +598,14 @@
           "interfaces": [
             {
               "name": "sdio",
-              "id": "c9a2c0ab-1580-411a-9720-15fd436945e3",
+              "id": "6f37a7a6-2a4d-463a-beac-6983f4dcc35b",
               "direction": "inout",
               "side": "right",
               "sidePosition": 0
             },
             {
               "name": "micro sd-card",
-              "id": "e64edfae-e3be-40b4-9eb4-7dd7a7d73deb",
+              "id": "d5185516-86a2-471b-8f70-c8d780eea380",
               "direction": "inout",
               "side": "left",
               "sidePosition": 0
@@ -837,7 +617,7 @@
           "instanceName": "Micro SD Card socket"
         },
         {
-          "id": "e2718642-ffde-40e8-9bed-0552f857403a",
+          "id": "495d7d15-0f10-4d36-91a2-e7581723e4d6",
           "position": {
             "x": 1900,
             "y": 600
@@ -847,35 +627,35 @@
           "interfaces": [
             {
               "name": "uart/mpsse[0]",
-              "id": "a2147225-0b00-4004-95c7-48c238e9d771",
+              "id": "557a9b37-9be2-4766-8877-43ed2dda686c",
               "direction": "inout",
               "side": "left",
               "sidePosition": 4
             },
             {
               "name": "uart/mpsse[1]",
-              "id": "c5efea57-2a0c-437d-8387-62895db4232e",
+              "id": "ee00b382-652b-4080-86f1-bf3d42c9563f",
               "direction": "inout",
               "side": "left",
               "sidePosition": 2
             },
             {
               "name": "usb",
-              "id": "3fd6ce01-9728-40af-beed-12824cfc920d",
+              "id": "10c34d04-71db-4194-a31d-fddfbc04366f",
               "direction": "inout",
               "side": "right",
               "sidePosition": 0
             },
             {
               "name": "uart[2]",
-              "id": "94ec6c9b-c21d-4cfd-a5fc-e9e27f30d9ea",
+              "id": "7976187e-e96f-4d07-aaff-1fb9508c1d74",
               "direction": "inout",
               "side": "left",
               "sidePosition": 1
             },
             {
               "name": "uart[3]",
-              "id": "b0afe195-f911-4766-b908-0c5df4cf7947",
+              "id": "7ca97ff7-ead9-4de1-8028-444e782923f6",
               "direction": "inout",
               "side": "left",
               "sidePosition": 3
@@ -887,7 +667,7 @@
           "instanceName": "4xUART 2xMPSSE Bridge"
         },
         {
-          "id": "b01ca4d4-845c-4e88-b441-16664304d8f8",
+          "id": "fc996bdf-e7e8-405c-b26d-8295ad13934d",
           "position": {
             "x": 2300,
             "y": 600
@@ -897,14 +677,14 @@
           "interfaces": [
             {
               "name": "usb",
-              "id": "46b802f5-ac75-4609-85bd-f10aaed1b343",
+              "id": "be828dcd-f645-4230-8f54-3cbf423a8042",
               "direction": "inout",
               "side": "left",
               "sidePosition": 0
             },
             {
               "name": "usb-c",
-              "id": "46e803fa-466b-4f0b-bd64-1408c92ee23c",
+              "id": "04ccfa2a-4e72-49fe-97b8-f2049094a02c",
               "direction": "inout",
               "side": "right",
               "sidePosition": 0
@@ -916,7 +696,7 @@
           "instanceName": "USB-C Connector"
         },
         {
-          "id": "bbbec245-ead2-424a-8d7e-a3c62580ece5",
+          "id": "7f05633f-e02d-428c-853a-5ef8f12e5a19",
           "position": {
             "x": 1900,
             "y": 900
@@ -926,14 +706,14 @@
           "interfaces": [
             {
               "name": "ARM JTAG 14",
-              "id": "7bb2705b-9cc6-4fe4-81a0-24ff3eb08455",
+              "id": "38fa835c-1de7-4758-946b-e9ea20e941b2",
               "direction": "inout",
               "side": "left",
               "sidePosition": 0
             },
             {
               "name": "gpio",
-              "id": "7778cbef-fee8-44c9-9303-7f09a7bdd51a",
+              "id": "4303ea71-2ad8-4aee-929b-06f84c3d1c94",
               "direction": "inout",
               "side": "right",
               "sidePosition": 0
@@ -945,7 +725,7 @@
           "instanceName": "JTAG Connector"
         },
         {
-          "id": "86ea4f66-01b7-41a5-892d-3391fe212da1",
+          "id": "40432c82-e56f-47a2-92f7-f7b9058e2e10",
           "position": {
             "x": 100,
             "y": -60
@@ -955,14 +735,14 @@
           "interfaces": [
             {
               "name": "ethernet",
-              "id": "16367b81-8646-416d-8fc4-af6c213eaf83",
+              "id": "060e0073-25bd-472c-9ad3-c06ff0f766a3",
               "direction": "inout",
               "side": "left",
               "sidePosition": 0
             },
             {
               "name": "rgmii",
-              "id": "db3f839a-db69-4236-be7c-690930bf8f5e",
+              "id": "e34dfe5e-e883-46c5-acd3-ab861efa41a3",
               "direction": "inout",
               "side": "right",
               "sidePosition": 0
@@ -974,7 +754,7 @@
           "instanceName": "GBe PHY"
         },
         {
-          "id": "09388b3b-1c6f-40c7-a67f-524f4c59a2c6",
+          "id": "7a8f225e-2344-47be-a1ba-61a75bec2083",
           "position": {
             "x": -300,
             "y": -60
@@ -984,14 +764,14 @@
           "interfaces": [
             {
               "name": "rj45",
-              "id": "c704e2b6-d49b-4ca2-81ff-831b6371f962",
+              "id": "6af96991-ba93-4a3f-a21c-88bb817bfe98",
               "direction": "inout",
               "side": "left",
               "sidePosition": 0
             },
             {
               "name": "ethernet",
-              "id": "ed583b14-b53d-46e5-bdc6-89bf5bd8265b",
+              "id": "cce27655-ec0a-4266-aea4-9277bc4bf1d6",
               "direction": "inout",
               "side": "right",
               "sidePosition": 0
@@ -1003,7 +783,7 @@
           "instanceName": "RJ-45 Connector"
         },
         {
-          "id": "8e72d3e2-7692-4a61-96af-b790e43bf955",
+          "id": "7775c081-28ea-4c13-82b3-6a012b54b2b7",
           "position": {
             "x": 1260,
             "y": 360
@@ -1013,7 +793,7 @@
           "interfaces": [
             {
               "name": "qspi",
-              "id": "f5dc4486-d69c-4f28-8953-e6619b9249c6",
+              "id": "952bf020-5f55-4226-9ffa-56ffe18872b4",
               "direction": "inout",
               "side": "left",
               "sidePosition": 0
@@ -1025,7 +805,7 @@
           "instanceName": "QSPI Flash"
         },
         {
-          "id": "457a5e5c-1d81-4ad3-ae40-dc61c2cfe81d",
+          "id": "adaba124-2d02-4300-9802-b02e941bd753",
           "position": {
             "x": 1260,
             "y": -200
@@ -1035,14 +815,14 @@
           "interfaces": [
             {
               "name": "power",
-              "id": "01df24f0-380a-43d2-ba51-ab9fcc2a609f",
+              "id": "b9038cfd-9487-41a6-bca2-47835100ac1f",
               "direction": "input",
               "side": "right",
               "sidePosition": 0
             },
             {
               "name": "power",
-              "id": "556941fe-f615-4557-bbc9-ca674a381b60",
+              "id": "a21ab43c-9997-492e-853a-e2de0aedd37d",
               "direction": "output",
               "side": "left",
               "sidePosition": 0
@@ -1054,7 +834,7 @@
           "instanceName": "DC Input"
         },
         {
-          "id": "c6b16adf-4734-4f87-bb94-29ae263ffd24",
+          "id": "9e991f20-1c15-43d2-b0e6-bf0edfc28ac5",
           "position": {
             "x": 640,
             "y": -120
@@ -1064,7 +844,7 @@
           "interfaces": [
             {
               "name": "power",
-              "id": "e2487c1c-1c4f-440d-979f-fde3ce2dd88a",
+              "id": "8564742f-5642-4267-919a-6a4f2e353cc5",
               "direction": "inout",
               "side": "right",
               "sidePosition": 0
@@ -1076,7 +856,7 @@
           "instanceName": "Board power distribution"
         },
         {
-          "id": "ffadbb97-7a03-40cf-bd14-17bca08b69c1",
+          "id": "1a030c23-c4dc-4302-83d4-1298fb81e50f",
           "position": {
             "x": 100,
             "y": -200
@@ -1086,7 +866,7 @@
           "interfaces": [
             {
               "name": "hyperbus",
-              "id": "59cdc14e-caae-42a3-9f2e-e2b4ad455bba",
+              "id": "5024436b-8467-4480-a59f-86dc880c0f2c",
               "direction": "inout",
               "side": "right",
               "sidePosition": 0
@@ -1098,7 +878,7 @@
           "instanceName": "Hyper Ram"
         },
         {
-          "id": "de43a9d2-8378-4f1c-bcaa-c8f24067b3db",
+          "id": "cc69e4c3-f680-4872-bc5a-6b1d1b4bb3b0",
           "position": {
             "x": 1260,
             "y": 60
@@ -1108,30 +888,30 @@
           "interfaces": [
             {
               "name": "i2c",
-              "id": "b6c971b2-b3db-4e5d-955b-0c3708d2a907",
+              "id": "aa31d822-55f9-4eb1-b8d9-363408b9c72f",
               "direction": "inout",
               "side": "right",
-              "sidePosition": 1
-            },
-            {
-              "name": "ddr",
-              "id": "bba8ecf7-1344-4a65-822b-a90203234306",
-              "direction": "inout",
-              "side": "left",
               "sidePosition": 1
             },
             {
               "name": "so-dimm ddr5",
-              "id": "d6633fc7-e90e-494b-9950-f2a987a41dc8",
+              "id": "95c0eb10-52dc-4452-b115-fe705cf3262c",
               "direction": "inout",
               "side": "right",
               "sidePosition": 0
+            },
+            {
+              "name": "ddr",
+              "id": "71f054db-8cb0-4474-a431-f0713e087ac1",
+              "direction": "inout",
+              "side": "left",
+              "sidePosition": 1
             }
           ],
           "properties": [
             {
               "name": "address (i2c)",
-              "id": "3aa47795-7456-4613-936d-471ab511ea31",
+              "id": "af62c154-3458-4f17-a09e-e6522fcb4507",
               "value": "0x40"
             }
           ],
@@ -1140,7 +920,7 @@
           "instanceName": "DDR5 SO-DIMM Connector"
         },
         {
-          "id": "57a56191-11b7-43a4-8ca7-ffdda2380321",
+          "id": "513584b2-9e64-4457-8204-02a3b2d914d7",
           "position": {
             "x": 2300,
             "y": -140
@@ -1150,14 +930,14 @@
           "interfaces": [
             {
               "name": "i2c",
-              "id": "033f70a3-5d73-4182-bd93-29733da6e6a1",
+              "id": "4eaef997-f8fc-4293-9fc7-d51ce18a1b19",
               "direction": "inout",
               "side": "left",
               "sidePosition": 1
             },
             {
               "name": "power",
-              "id": "259f0588-68f2-4121-8ac9-1f64531f7d26",
+              "id": "494c7fa1-2d7c-4412-affb-743f68c24d56",
               "direction": "inout",
               "side": "left",
               "sidePosition": 0
@@ -1166,7 +946,7 @@
           "properties": [
             {
               "name": "address (i2c)",
-              "id": "013cbf7e-3dc0-4310-885b-de5cc16ad680",
+              "id": "d4e270af-8567-4f9e-b51f-40b8359780b9",
               "value": ""
             }
           ],
@@ -1175,7 +955,7 @@
           "instanceName": "Power Monitor"
         },
         {
-          "id": "c824ea83-e2e9-4b55-a90d-15c12f05027d",
+          "id": "a453a256-e58e-43bf-b6e5-53fcfde848e2",
           "position": {
             "x": 2300,
             "y": 400
@@ -1185,7 +965,7 @@
           "interfaces": [
             {
               "name": "io",
-              "id": "cd5d037c-f3f3-471b-9af7-bf6e7fa08002",
+              "id": "aee7d2a9-0b02-4637-b053-8ee5e15cd2ab",
               "direction": "inout",
               "side": "left",
               "sidePosition": 0
@@ -1197,7 +977,7 @@
           "instanceName": "Slide switch"
         },
         {
-          "id": "abf596f6-1719-4c25-bbc9-bac71feaf731",
+          "id": "9301cc6a-072f-4ced-87b7-9ae65605790f",
           "position": {
             "x": 640,
             "y": 120
@@ -1207,70 +987,70 @@
           "interfaces": [
             {
               "name": "bank[12]",
-              "id": "fe884151-5889-4aec-9a7c-fe6c056040b8",
+              "id": "e22960ec-dd4c-4af3-8195-7339b5ad874a",
               "direction": "inout",
               "side": "left",
               "sidePosition": 0
             },
             {
               "name": "bank[13]",
-              "id": "e9e8d7ba-bf55-4eff-9f43-e758fe1e8b83",
+              "id": "e2152261-bf09-4bf1-a5af-df88f6b64564",
               "direction": "inout",
               "side": "left",
               "sidePosition": 6
             },
             {
               "name": "bank[14]",
-              "id": "c3e94e27-75df-4c5e-8eb8-cbdb3ff91d8a",
+              "id": "f6c887bd-253d-47cd-94f3-5b8491477814",
               "direction": "inout",
               "side": "right",
               "sidePosition": 17
             },
             {
               "name": "bank[15]",
-              "id": "5eb2944e-b8e0-41bc-a5e0-a4a8b1f39737",
+              "id": "cd61c155-8ab7-4d7a-9fbe-9987c8400cac",
               "direction": "inout",
               "side": "left",
               "sidePosition": 7
             },
             {
               "name": "bank[16]",
-              "id": "4ced28be-4e00-412a-85ea-ccb3f4c89557",
+              "id": "3618d1d5-51ee-4330-8bbb-50dee600521a",
               "direction": "inout",
               "side": "left",
               "sidePosition": 13
             },
             {
               "name": "mgtx",
-              "id": "f8ebc291-f45a-4c38-97e2-17d5910fdbb2",
+              "id": "ee1bf6ef-f080-4fd5-b3cc-48afd022f0f1",
               "direction": "inout",
               "side": "left",
               "sidePosition": 2
             },
             {
               "name": "bank[32]",
-              "id": "ddf0782e-3fbd-44e0-a4a3-42921a0e737c",
+              "id": "514956cc-b042-4d75-ac19-37fefa0d2a27",
               "direction": "inout",
               "side": "right",
               "sidePosition": 2
             },
             {
               "name": "bank[33]",
-              "id": "d698f48c-9970-49df-85ce-9802f311eb18",
+              "id": "02d73a2e-acfa-4cc0-aeb8-8ca891e5b259",
               "direction": "inout",
               "side": "right",
               "sidePosition": 0
             },
             {
               "name": "bank[34]",
-              "id": "37ce829a-3f65-4bb2-8999-76b686ee720c",
+              "id": "08970f51-500e-444f-8340-c5f5a61032e0",
               "direction": "inout",
               "side": "right",
               "sidePosition": 1
             },
             {
               "name": "jtag",
-              "id": "f63350d4-9f32-435e-91cf-360ceb6ad799",
+              "id": "b4fcae65-40b7-4eea-9e4e-482e90a3e989",
               "direction": "inout",
               "side": "right",
               "sidePosition": 18
@@ -1282,7 +1062,7 @@
           "instanceName": "XC7K160T-FFG676"
         },
         {
-          "id": "32978af1-b30c-4833-8e63-17b8962c9d60",
+          "id": "49d6f819-6819-40d0-85e1-ffe86e32fc61",
           "position": {
             "x": 100,
             "y": 360
@@ -1292,7 +1072,7 @@
           "interfaces": [
             {
               "name": "clk",
-              "id": "a7fa29e9-d9e3-409a-8e31-40feca7c8118",
+              "id": "b214509c-b83f-440b-8218-c13964157e59",
               "direction": "inout",
               "side": "right",
               "sidePosition": 0
@@ -1301,7 +1081,7 @@
           "properties": [
             {
               "name": "frequency (Hz)",
-              "id": "37eb953f-a89c-408c-bba8-dff9d8f5bff1",
+              "id": "a9869a9b-9b90-4b2e-8566-edfc01d4cd4b",
               "value": "100000000"
             }
           ],
@@ -1310,7 +1090,7 @@
           "instanceName": "Clock Generator"
         },
         {
-          "id": "d9aa8cc1-d60f-4b3a-aea5-2932562e36b0",
+          "id": "90fca60b-133d-43bc-8aa6-5d7ff6457cce",
           "position": {
             "x": 1760,
             "y": 360
@@ -1320,42 +1100,42 @@
           "interfaces": [
             {
               "name": "common",
-              "id": "2046c5b2-a1bb-4b2e-b86e-e95626f501a6",
+              "id": "8adc233d-7b3b-4db4-a816-a903e7ff4ffb",
               "direction": "inout",
               "side": "right",
               "sidePosition": 0
             },
             {
               "name": "switch[0]",
-              "id": "b90c1b3f-08e1-44dd-9b67-bd164e999749",
+              "id": "d93663a6-61d8-42df-a98e-9b31ffc6958a",
               "direction": "inout",
               "side": "left",
               "sidePosition": 0
             },
             {
               "name": "switch[1]",
-              "id": "f51ac14f-9a80-4de5-87df-ab52ff40e28a",
+              "id": "6245d3cc-7c10-455b-81e0-c8f4da1bc91b",
               "direction": "inout",
               "side": "left",
               "sidePosition": 1
             },
             {
               "name": "switch[2]",
-              "id": "4aaca835-918e-4760-85df-56946cea9c08",
+              "id": "73f30fe2-3feb-443c-b0ff-7c475639687a",
               "direction": "inout",
               "side": "left",
               "sidePosition": 2
             },
             {
               "name": "select[0]",
-              "id": "b5792818-3865-433e-adc0-bab0ca95ef0b",
+              "id": "ab39c7c6-9ddf-418f-9f89-31875f82823d",
               "direction": "input",
               "side": "right",
               "sidePosition": 1
             },
             {
               "name": "select[1]",
-              "id": "1fc3c0c1-24f7-4d12-9839-f667d7285733",
+              "id": "1b24fd4f-46ee-44c1-9ee9-a736abddcbf4",
               "direction": "input",
               "side": "right",
               "sidePosition": 2
@@ -1367,7 +1147,7 @@
           "instanceName": "3:1 Multiplexer"
         },
         {
-          "id": "f099320a-c36a-4d12-8034-d28d594c29a2",
+          "id": "096d8596-4934-45b6-93f7-8de071f1f158",
           "position": {
             "x": 100,
             "y": 100
@@ -1377,42 +1157,42 @@
           "interfaces": [
             {
               "name": "gpio",
-              "id": "95c22f3f-1d07-4219-a78d-3f73b4be7521",
+              "id": "42165efb-97cc-4786-84fd-37b71c20eb47",
               "direction": "inout",
               "side": "left",
               "sidePosition": 0
             },
             {
               "name": "pcie[0]",
-              "id": "8b95994e-c5b1-4cd9-b690-ea14afab8605",
+              "id": "34d20d09-6883-4d36-8f95-5da84db1964d",
               "direction": "inout",
               "side": "right",
               "sidePosition": 0
             },
             {
               "name": "pcie[1]",
-              "id": "b272b0ad-5526-4654-b0f7-fef237a5fc06",
+              "id": "319c322e-04ad-4244-b8fc-67e8993c5c26",
               "direction": "inout",
               "side": "right",
               "sidePosition": 1
             },
             {
               "name": "pcie[2]",
-              "id": "9d5457b1-8c35-46c2-8352-f55f8ed9649a",
+              "id": "147e4356-01c6-4c01-a7e3-386278d15103",
               "direction": "inout",
               "side": "right",
               "sidePosition": 2
             },
             {
               "name": "pcie[3]",
-              "id": "37acf81f-5c3c-4dd8-8565-415b0b6f6d2c",
+              "id": "1c07c8a5-d88a-4f4d-99be-1ae157f966eb",
               "direction": "inout",
               "side": "right",
               "sidePosition": 3
             },
             {
               "name": "pcie x4 edge",
-              "id": "b5f4f34c-e364-477c-a65e-69e8eca7f4cd",
+              "id": "d187fda0-a31d-427a-8f02-7e8487c5e892",
               "direction": "inout",
               "side": "left",
               "sidePosition": 3
@@ -1426,149 +1206,326 @@
       ],
       "connections": [
         {
-          "id": "850f8b19-731e-4bcd-a73a-188ed77a6d77",
-          "from": "46b802f5-ac75-4609-85bd-f10aaed1b343",
-          "to": "3fd6ce01-9728-40af-beed-12824cfc920d"
+          "id": "7b798ec0-e367-4135-b892-c53dbca5f8eb",
+          "from": "be828dcd-f645-4230-8f54-3cbf423a8042",
+          "to": "10c34d04-71db-4194-a31d-fddfbc04366f"
         },
         {
-          "id": "7bce49b9-2fd8-4007-80cb-858e74999d1c",
-          "from": "ed583b14-b53d-46e5-bdc6-89bf5bd8265b",
-          "to": "16367b81-8646-416d-8fc4-af6c213eaf83"
+          "id": "9f6dd517-2566-4366-a63d-48af68ee60b6",
+          "from": "cce27655-ec0a-4266-aea4-9277bc4bf1d6",
+          "to": "060e0073-25bd-472c-9ad3-c06ff0f766a3"
         },
         {
-          "id": "393ddf28-5e6f-4315-9193-929477ef0d36",
-          "from": "556941fe-f615-4557-bbc9-ca674a381b60",
-          "to": "e2487c1c-1c4f-440d-979f-fde3ce2dd88a"
+          "id": "858ab411-dc75-4d0c-943f-6a52c8fc63da",
+          "from": "a21ab43c-9997-492e-853a-e2de0aedd37d",
+          "to": "8564742f-5642-4267-919a-6a4f2e353cc5"
         },
         {
-          "id": "ee67d07a-5f5e-47fe-8db3-31025effada3",
-          "from": "e2487c1c-1c4f-440d-979f-fde3ce2dd88a",
-          "to": "259f0588-68f2-4121-8ac9-1f64531f7d26"
+          "id": "c6711318-5832-422d-9a51-f2b5ee5c45b3",
+          "from": "8564742f-5642-4267-919a-6a4f2e353cc5",
+          "to": "494c7fa1-2d7c-4412-affb-743f68c24d56"
         },
         {
-          "id": "e73fe4c6-d310-4f00-b126-151255c4415d",
-          "from": "db3f839a-db69-4236-be7c-690930bf8f5e",
-          "to": "fe884151-5889-4aec-9a7c-fe6c056040b8"
+          "id": "312126ba-77f5-4121-9c8d-049f118b1ab5",
+          "from": "e34dfe5e-e883-46c5-acd3-ab861efa41a3",
+          "to": "e22960ec-dd4c-4af3-8195-7339b5ad874a"
         },
         {
-          "id": "818b0c6f-9039-40b0-9d47-1b5b39bd19d7",
-          "from": "59cdc14e-caae-42a3-9f2e-e2b4ad455bba",
-          "to": "fe884151-5889-4aec-9a7c-fe6c056040b8"
+          "id": "6e118d79-89a5-44b2-beef-1319f5163c71",
+          "from": "5024436b-8467-4480-a59f-86dc880c0f2c",
+          "to": "e22960ec-dd4c-4af3-8195-7339b5ad874a"
         },
         {
-          "id": "be5b8375-0ffe-48df-95c7-56574ef9af1f",
-          "from": "94ec6c9b-c21d-4cfd-a5fc-e9e27f30d9ea",
-          "to": "c3e94e27-75df-4c5e-8eb8-cbdb3ff91d8a"
+          "id": "44ece439-866a-4990-9358-402a0e49f7f3",
+          "from": "7976187e-e96f-4d07-aaff-1fb9508c1d74",
+          "to": "f6c887bd-253d-47cd-94f3-5b8491477814"
         },
         {
-          "id": "b0db3787-3ef0-461d-bd5a-21501d49acc3",
-          "from": "c5efea57-2a0c-437d-8387-62895db4232e",
-          "to": "c3e94e27-75df-4c5e-8eb8-cbdb3ff91d8a"
+          "id": "355ca4dd-c6e9-41cd-a0e6-4195f524d9d0",
+          "from": "ee00b382-652b-4080-86f1-bf3d42c9563f",
+          "to": "f6c887bd-253d-47cd-94f3-5b8491477814"
         },
         {
-          "id": "584b9c3d-d116-4aca-b6e7-b891f465fab0",
-          "from": "f5dc4486-d69c-4f28-8953-e6619b9249c6",
-          "to": "c3e94e27-75df-4c5e-8eb8-cbdb3ff91d8a"
+          "id": "f0999d00-dd50-4005-9dd3-a3d01b92a399",
+          "from": "952bf020-5f55-4226-9ffa-56ffe18872b4",
+          "to": "f6c887bd-253d-47cd-94f3-5b8491477814"
         },
         {
-          "id": "6539f214-a501-40ef-992d-0ed532b57399",
-          "from": "b0afe195-f911-4766-b908-0c5df4cf7947",
-          "to": "c3e94e27-75df-4c5e-8eb8-cbdb3ff91d8a"
+          "id": "3720cb00-c07e-49b1-9560-de77569c9119",
+          "from": "7ca97ff7-ead9-4de1-8028-444e782923f6",
+          "to": "f6c887bd-253d-47cd-94f3-5b8491477814"
         },
         {
-          "id": "3aa74df1-54c2-4c85-9981-0b5ce8e16600",
-          "from": "3f202ae2-c0c3-46c4-aee7-43360b7aa4e4",
-          "to": "4ced28be-4e00-412a-85ea-ccb3f4c89557"
+          "id": "1ba6974c-35ba-4e3f-8b06-bdf0223d1e2b",
+          "from": "9451560e-90a8-4bbb-9884-9b71399aaee7",
+          "to": "3618d1d5-51ee-4330-8bbb-50dee600521a"
         },
         {
-          "id": "b91b8c39-89a5-4dca-9a3f-8c2167006336",
-          "from": "c9a2c0ab-1580-411a-9720-15fd436945e3",
-          "to": "4ced28be-4e00-412a-85ea-ccb3f4c89557"
+          "id": "e75221be-a4af-496d-a994-e71b634ded99",
+          "from": "6f37a7a6-2a4d-463a-beac-6983f4dcc35b",
+          "to": "3618d1d5-51ee-4330-8bbb-50dee600521a"
         },
         {
-          "id": "b8c185af-e858-45b7-a0c3-96664429776b",
-          "from": "bba8ecf7-1344-4a65-822b-a90203234306",
-          "to": "ddf0782e-3fbd-44e0-a4a3-42921a0e737c"
+          "id": "8821dd00-cc48-4f13-8b51-20823a3c3d70",
+          "from": "71f054db-8cb0-4474-a431-f0713e087ac1",
+          "to": "514956cc-b042-4d75-ac19-37fefa0d2a27"
         },
         {
-          "id": "179f145a-e9f4-418d-b270-2bbd847a380a",
-          "from": "bba8ecf7-1344-4a65-822b-a90203234306",
-          "to": "d698f48c-9970-49df-85ce-9802f311eb18"
+          "id": "7fe72293-eae7-4e9a-91c0-fd9713731ff9",
+          "from": "71f054db-8cb0-4474-a431-f0713e087ac1",
+          "to": "02d73a2e-acfa-4cc0-aeb8-8ca891e5b259"
         },
         {
-          "id": "2cb59dfe-674b-462d-8d35-5d57571e6101",
-          "from": "bba8ecf7-1344-4a65-822b-a90203234306",
-          "to": "37ce829a-3f65-4bb2-8999-76b686ee720c"
+          "id": "dc61256e-e6aa-4231-9e97-bd166b4c6eb6",
+          "from": "71f054db-8cb0-4474-a431-f0713e087ac1",
+          "to": "08970f51-500e-444f-8340-c5f5a61032e0"
         },
         {
-          "id": "b9dfbc56-0217-4a42-af68-a9be93ef7846",
-          "from": "a2147225-0b00-4004-95c7-48c238e9d771",
-          "to": "f63350d4-9f32-435e-91cf-360ceb6ad799"
+          "id": "bceb60cd-db87-4a73-9201-bd0f6b7bb6e1",
+          "from": "557a9b37-9be2-4766-8877-43ed2dda686c",
+          "to": "b4fcae65-40b7-4eea-9e4e-482e90a3e989"
         },
         {
-          "id": "4d4d7c12-eca5-45f7-9501-4ccc38a179fd",
-          "from": "7bb2705b-9cc6-4fe4-81a0-24ff3eb08455",
-          "to": "f63350d4-9f32-435e-91cf-360ceb6ad799"
+          "id": "4ec2d139-c245-44b9-a8d8-8d183f142833",
+          "from": "38fa835c-1de7-4758-946b-e9ea20e941b2",
+          "to": "b4fcae65-40b7-4eea-9e4e-482e90a3e989"
         },
         {
-          "id": "000e8e5e-6b24-4fa0-869f-d74a4f8f9b0e",
-          "from": "a7fa29e9-d9e3-409a-8e31-40feca7c8118",
-          "to": "4ced28be-4e00-412a-85ea-ccb3f4c89557"
+          "id": "e072661e-3037-4900-b6cb-82090dfbd3a0",
+          "from": "b214509c-b83f-440b-8218-c13964157e59",
+          "to": "3618d1d5-51ee-4330-8bbb-50dee600521a"
         },
         {
-          "id": "9b57c5da-f0f5-44ac-9c57-4b1664468e83",
-          "from": "b6c971b2-b3db-4e5d-955b-0c3708d2a907",
-          "to": "b90c1b3f-08e1-44dd-9b67-bd164e999749"
+          "id": "3c1ceac3-fd1b-4d05-89cd-6d1bf545b9f5",
+          "from": "aa31d822-55f9-4eb1-b8d9-363408b9c72f",
+          "to": "d93663a6-61d8-42df-a98e-9b31ffc6958a"
         },
         {
-          "id": "aa19886d-4c94-44fb-9853-d5f3e6d09239",
-          "from": "c3e94e27-75df-4c5e-8eb8-cbdb3ff91d8a",
-          "to": "f51ac14f-9a80-4de5-87df-ab52ff40e28a"
+          "id": "09889b7b-dc79-47f5-bc31-2a191df4d2f8",
+          "from": "f6c887bd-253d-47cd-94f3-5b8491477814",
+          "to": "6245d3cc-7c10-455b-81e0-c8f4da1bc91b"
         },
         {
-          "id": "6323e9ce-2b68-4972-8241-93182e9faab8",
-          "from": "94ec6c9b-c21d-4cfd-a5fc-e9e27f30d9ea",
-          "to": "4aaca835-918e-4760-85df-56946cea9c08"
+          "id": "84decbde-f5bd-460d-8320-3960cc82a8ea",
+          "from": "7976187e-e96f-4d07-aaff-1fb9508c1d74",
+          "to": "73f30fe2-3feb-443c-b0ff-7c475639687a"
         },
         {
-          "id": "347e38cb-773e-4146-bc3b-5c425960f809",
-          "from": "cd5d037c-f3f3-471b-9af7-bf6e7fa08002",
-          "to": "b5792818-3865-433e-adc0-bab0ca95ef0b"
+          "id": "b03581a0-3f03-4f23-885d-5b26d155d2c4",
+          "from": "aee7d2a9-0b02-4637-b053-8ee5e15cd2ab",
+          "to": "ab39c7c6-9ddf-418f-9f89-31875f82823d"
         },
         {
-          "id": "0ecff8d8-6b50-4b37-a324-bc831668b189",
-          "from": "cd5d037c-f3f3-471b-9af7-bf6e7fa08002",
-          "to": "1fc3c0c1-24f7-4d12-9839-f667d7285733"
+          "id": "c4353ee0-e3bc-4528-99f6-44766194530b",
+          "from": "aee7d2a9-0b02-4637-b053-8ee5e15cd2ab",
+          "to": "1b24fd4f-46ee-44c1-9ee9-a736abddcbf4"
         },
         {
-          "id": "50f692fa-99de-4649-961b-b994703f4409",
-          "from": "033f70a3-5d73-4182-bd93-29733da6e6a1",
-          "to": "2046c5b2-a1bb-4b2e-b86e-e95626f501a6"
+          "id": "12b2488e-9701-412d-86ab-aedb797b76ee",
+          "from": "4eaef997-f8fc-4293-9fc7-d51ce18a1b19",
+          "to": "8adc233d-7b3b-4db4-a816-a903e7ff4ffb"
         },
         {
-          "id": "694a8c85-105f-40b6-9bd4-acf329d9b975",
-          "from": "8b95994e-c5b1-4cd9-b690-ea14afab8605",
-          "to": "f8ebc291-f45a-4c38-97e2-17d5910fdbb2"
+          "id": "e3066e3a-dcf2-4982-bdef-816e09a583c5",
+          "from": "34d20d09-6883-4d36-8f95-5da84db1964d",
+          "to": "ee1bf6ef-f080-4fd5-b3cc-48afd022f0f1"
         },
         {
-          "id": "8169356f-9e66-4d0f-bc91-5942ea558cff",
-          "from": "f8ebc291-f45a-4c38-97e2-17d5910fdbb2",
-          "to": "b272b0ad-5526-4654-b0f7-fef237a5fc06"
+          "id": "0f617715-2b71-42e8-924a-11bbf7f314cd",
+          "from": "ee1bf6ef-f080-4fd5-b3cc-48afd022f0f1",
+          "to": "319c322e-04ad-4244-b8fc-67e8993c5c26"
         },
         {
-          "id": "0bd4325a-d601-433f-9a9b-4f47c4978435",
-          "from": "9d5457b1-8c35-46c2-8352-f55f8ed9649a",
-          "to": "f8ebc291-f45a-4c38-97e2-17d5910fdbb2"
+          "id": "c395e563-1832-4c85-9e15-5ba142565852",
+          "from": "147e4356-01c6-4c01-a7e3-386278d15103",
+          "to": "ee1bf6ef-f080-4fd5-b3cc-48afd022f0f1"
         },
         {
-          "id": "76112e3e-ce62-4290-b191-d22cddf6bfc6",
-          "from": "37acf81f-5c3c-4dd8-8565-415b0b6f6d2c",
-          "to": "f8ebc291-f45a-4c38-97e2-17d5910fdbb2"
+          "id": "90ad5a7a-0652-47d5-adca-7a844614b5c6",
+          "from": "1c07c8a5-d88a-4f4d-99be-1ae157f966eb",
+          "to": "ee1bf6ef-f080-4fd5-b3cc-48afd022f0f1"
         },
         {
-          "id": "e7817246-60a5-4be0-adf9-88c5d88adf29",
-          "from": "95c22f3f-1d07-4219-a78d-3f73b4be7521",
-          "to": "5c4bc579-648b-4ec6-bce5-0ca9124b3b6c"
+          "id": "2733b80d-3445-4ebd-acaa-652e522e5ee0",
+          "from": "42165efb-97cc-4786-84fd-37b71c20eb47",
+          "to": "c58abde2-a6ea-42f3-823b-c5e346422d2a"
+        }
+      ]
+    },
+    {
+      "id": "ace06ad6-68a8-4be9-8fd2-dd8fe8349030",
+      "nodes": [
+        {
+          "id": "db426786-0e73-4822-aaed-fffe7f85f694",
+          "position": {
+            "x": 800,
+            "y": 500
+          },
+          "width": 300,
+          "twoColumn": true,
+          "interfaces": [
+            {
+              "name": "SO-DIMM DDR5",
+              "id": "d66a1caa-ebb3-4e5e-87d6-757c6c7312c9",
+              "direction": "inout",
+              "side": "left",
+              "sidePosition": 0
+            },
+            {
+              "name": "i2c",
+              "id": "2547d1c0-eb78-41ba-a82c-e343a2ce3d88",
+              "direction": "inout",
+              "side": "right",
+              "sidePosition": 0
+            },
+            {
+              "name": "ddr",
+              "id": "52871916-f27f-4440-8e59-af85a1764ed6",
+              "direction": "inout",
+              "side": "right",
+              "sidePosition": 1
+            }
+          ],
+          "properties": [],
+          "enabledInterfaceGroups": [],
+          "name": "SO-DIMM DDR5 tester edge connector",
+          "instanceName": "SO-DIMM DDR5 tester edge connector"
+        },
+        {
+          "id": "15ffcb61-db74-408f-927b-1481167fb8df",
+          "position": {
+            "x": 1500,
+            "y": 100
+          },
+          "width": 300,
+          "twoColumn": true,
+          "interfaces": [
+            {
+              "name": "i2c",
+              "id": "a8146f95-9ba8-485f-b3a8-413486863e11",
+              "direction": "inout",
+              "side": "left",
+              "sidePosition": 1
+            },
+            {
+              "name": "power",
+              "id": "7b3527ad-37ca-4ef2-96a8-7b8211dd77a2",
+              "direction": "inout",
+              "side": "left",
+              "sidePosition": 0
+            }
+          ],
+          "properties": [
+            {
+              "name": "address (i2c)",
+              "id": "742dcbba-5d3c-4d49-853e-8cb5571883c4",
+              "value": "0x68"
+            }
+          ],
+          "enabledInterfaceGroups": [],
+          "name": "Monolithic Power Systems MPM54304GMN-0001",
+          "instanceName": "Monolithic Power Systems MPM54304GMN-0001"
+        },
+        {
+          "id": "d3ebb1ac-71e6-4d46-b979-b4c1b870be5c",
+          "position": {
+            "x": 1514,
+            "y": 433
+          },
+          "width": 300,
+          "twoColumn": true,
+          "interfaces": [
+            {
+              "name": "i2c",
+              "id": "004df473-cf1b-4d37-9024-3df1462527ba",
+              "direction": "inout",
+              "side": "left",
+              "sidePosition": 0
+            }
+          ],
+          "properties": [
+            {
+              "name": "address (i2c)",
+              "id": "e7826b25-840a-4963-bc14-113f67d0d155",
+              "value": "0x50"
+            }
+          ],
+          "enabledInterfaceGroups": [],
+          "name": "Microchip Technology AT24CS01-ST",
+          "instanceName": "Microchip Technology AT24CS01-ST"
+        },
+        {
+          "id": "aec8e0ec-f2c8-4763-9234-4dd1f8a48a5a",
+          "position": {
+            "x": 1500,
+            "y": 700
+          },
+          "width": 300,
+          "twoColumn": true,
+          "interfaces": [
+            {
+              "name": "lpddr",
+              "id": "957ddb46-213a-43f2-9e8c-82a02f5820bc",
+              "direction": "inout",
+              "side": "left",
+              "sidePosition": 0
+            }
+          ],
+          "properties": [],
+          "enabledInterfaceGroups": [],
+          "name": "Micron Technology MT62F1G32D4DR-031 WT:B",
+          "instanceName": "Micron Technology MT62F1G32D4DR-031 WT:B"
+        },
+        {
+          "id": "adee1b3d-fde0-449c-92b0-f1597ca0a068",
+          "position": {
+            "x": 657,
+            "y": 201
+          },
+          "width": 300,
+          "twoColumn": true,
+          "interfaces": [
+            {
+              "name": "gpio",
+              "id": "179a01e0-6782-4ad4-8e45-9b706c5af989",
+              "direction": "inout",
+              "side": "right",
+              "sidePosition": 0
+            },
+            {
+              "name": "wire to board",
+              "id": "b0ad971f-e1cb-4ea9-9b70-4160b951b70f",
+              "direction": "inout",
+              "side": "left",
+              "sidePosition": 0
+            }
+          ],
+          "properties": [],
+          "enabledInterfaceGroups": [],
+          "name": "JST Automotive Connectors SM04B-SRSS-TB(LF)(SN)",
+          "instanceName": "JST Automotive Connectors SM04B-SRSS-TB(LF)(SN)"
+        }
+      ],
+      "connections": [
+        {
+          "id": "b9dca637-c654-49e3-81e0-30e4adb3e76b",
+          "from": "2547d1c0-eb78-41ba-a82c-e343a2ce3d88",
+          "to": "a8146f95-9ba8-485f-b3a8-413486863e11"
+        },
+        {
+          "id": "438e670d-97b9-48d0-a431-9e7e503536bb",
+          "from": "2547d1c0-eb78-41ba-a82c-e343a2ce3d88",
+          "to": "004df473-cf1b-4d37-9024-3df1462527ba"
+        },
+        {
+          "id": "dfbe4d0a-6688-458a-ba9f-e6f4f168a49f",
+          "from": "52871916-f27f-4440-8e59-af85a1764ed6",
+          "to": "957ddb46-213a-43f2-9e8c-82a02f5820bc"
+        },
+        {
+          "id": "19d7a985-cd10-4b00-8e89-7220e82efbe1",
+          "from": "179a01e0-6782-4ad4-8e45-9b706c5af989",
+          "to": "a8146f95-9ba8-485f-b3a8-413486863e11"
         }
       ]
     },
@@ -1576,7 +1533,7 @@
       "id": "9fc97807-4778-405b-8a1f-9d4608965b11",
       "nodes": [
         {
-          "id": "6e1e192a-1772-4d66-a000-4aae4e1fc65e",
+          "id": "2f019b16-7f70-4d38-a090-509f5e1ee430",
           "position": {
             "x": 1200,
             "y": 200
@@ -1586,42 +1543,42 @@
           "interfaces": [
             {
               "name": "power",
-              "id": "2ff841e1-1340-44cf-b9da-cac3180737aa",
+              "id": "1d86d46b-d7dd-441d-aa0d-85a31fe7d95d",
               "direction": "input",
-              "side": "left",
-              "sidePosition": 3
-            },
-            {
-              "name": "micro sd-card",
-              "id": "14a62bc6-3a2b-4006-a1ac-916e3e59ba0d",
-              "direction": "inout",
               "side": "left",
               "sidePosition": 4
             },
             {
+              "name": "micro sd-card",
+              "id": "bda61171-8ec0-48bb-a681-526e3a3399bf",
+              "direction": "inout",
+              "side": "left",
+              "sidePosition": 0
+            },
+            {
               "name": "rj45",
-              "id": "f507022a-4256-44ef-ba60-ac78aac041ce",
+              "id": "8e67c9d8-a440-4ab0-8016-429601553180",
               "direction": "inout",
               "side": "left",
               "sidePosition": 1
             },
             {
-              "name": "RDIMM DDR5",
-              "id": "cd292f45-f6cd-49e0-beec-648a0141a66d",
+              "name": "rdimm ddr5",
+              "id": "2d26cf31-ea2e-4902-b5bb-1c666ab4042f",
               "direction": "inout",
               "side": "right",
-              "sidePosition": 0
+              "sidePosition": 1
             },
             {
               "name": "usb-c",
-              "id": "ea3e3d6e-5341-4534-a025-fc9b3eef0646",
+              "id": "0ba71df2-b7c5-41ec-8b78-8e591bc83bda",
               "direction": "inout",
               "side": "left",
-              "sidePosition": 0
+              "sidePosition": 3
             },
             {
               "name": "hdmi",
-              "id": "a31a924f-39e8-4fa7-ad89-4b36acf27e7f",
+              "id": "9071855e-2749-42e2-af2c-c9906a209e3b",
               "direction": "output",
               "side": "left",
               "sidePosition": 2
@@ -1630,11 +1587,10 @@
           "properties": [],
           "enabledInterfaceGroups": [],
           "name": "Data Center RDIMM DDR5 Tester",
-          "instanceName": "Data Center RDIMM DDR5 Tester",
           "subgraph": "44075e6a-e2a5-40a6-afba-ec9248711705"
         },
         {
-          "id": "f02a4964-bfe4-42d8-8edf-54ddcafb16be",
+          "id": "a1360948-7ad9-4823-9a90-3d76199ea9fc",
           "position": {
             "x": 500,
             "y": 200
@@ -1644,14 +1600,14 @@
           "interfaces": [
             {
               "name": "usb-a",
-              "id": "5b8e3a13-2053-4158-844f-45b5c494b295",
+              "id": "70016f6d-ea2c-47d5-bb2b-fc6adde3deec",
               "direction": "inout",
               "side": "right",
               "sidePosition": 0
             },
             {
               "name": "rj45",
-              "id": "6954145e-513c-475e-a158-8700d6e03518",
+              "id": "74bfd4f2-2d24-4875-8c11-3bb4d73c1a1a",
               "direction": "inout",
               "side": "right",
               "sidePosition": 1
@@ -1663,7 +1619,7 @@
           "instanceName": "MGMT PC"
         },
         {
-          "id": "6be7c42d-6898-4823-9398-9e4b3a7eb73f",
+          "id": "5afcc8d2-f12a-4b6f-9471-79a83a6eab29",
           "position": {
             "x": 1900,
             "y": 200
@@ -1673,7 +1629,7 @@
           "interfaces": [
             {
               "name": "RDIMM DDR5",
-              "id": "15593bb4-3c37-4dfd-bdfb-46007bd884e4",
+              "id": "b815c21d-a150-489a-ae12-f3fc95e45f15",
               "direction": "inout",
               "side": "left",
               "sidePosition": 0
@@ -1687,19 +1643,19 @@
       ],
       "connections": [
         {
-          "id": "14f4d4db-40fb-4a00-9679-077daba04ffc",
-          "from": "ea3e3d6e-5341-4534-a025-fc9b3eef0646",
-          "to": "5b8e3a13-2053-4158-844f-45b5c494b295"
+          "id": "2d9230d4-bc25-4d21-ba3e-2629a92cdeed",
+          "from": "bda61171-8ec0-48bb-a681-526e3a3399bf",
+          "to": "70016f6d-ea2c-47d5-bb2b-fc6adde3deec"
         },
         {
-          "id": "e7acc7a7-05d5-4767-a6ee-dc4363f77d67",
-          "from": "6954145e-513c-475e-a158-8700d6e03518",
-          "to": "f507022a-4256-44ef-ba60-ac78aac041ce"
+          "id": "5f971cec-7bb5-4d28-8013-bbbb9a4631a0",
+          "from": "8e67c9d8-a440-4ab0-8016-429601553180",
+          "to": "74bfd4f2-2d24-4875-8c11-3bb4d73c1a1a"
         },
         {
-          "id": "604aa1ff-496b-4ee1-ae13-964dcfe48f99",
-          "from": "15593bb4-3c37-4dfd-bdfb-46007bd884e4",
-          "to": "cd292f45-f6cd-49e0-beec-648a0141a66d"
+          "id": "cfdce560-0bae-403c-b6d0-c3fb5eacf14a",
+          "from": "b815c21d-a150-489a-ae12-f3fc95e45f15",
+          "to": "2d26cf31-ea2e-4902-b5bb-1c666ab4042f"
         }
       ]
     },
@@ -1707,7 +1663,7 @@
       "id": "44075e6a-e2a5-40a6-afba-ec9248711705",
       "nodes": [
         {
-          "id": "c1f240a5-59bc-4139-b9a1-40ebdc8bcabc",
+          "id": "87cf1571-daf7-48c7-be31-028cf1d140f6",
           "position": {
             "x": 2100,
             "y": -250
@@ -1717,14 +1673,14 @@
           "interfaces": [
             {
               "name": "power",
-              "id": "200e2372-f0d8-4223-a1cd-f39b50af69f4",
+              "id": "3199c1d8-98f9-4a45-b670-01d7606b0fc4",
               "direction": "input",
               "side": "right",
               "sidePosition": 0
             },
             {
               "name": "power",
-              "id": "c238fad0-7f35-45b2-afab-ec8703de9f34",
+              "id": "495d4084-87a2-4eab-a927-49767cf7151a",
               "direction": "output",
               "side": "left",
               "sidePosition": 0
@@ -1736,7 +1692,7 @@
           "instanceName": "DC Power In"
         },
         {
-          "id": "bb1ad906-ee73-4bfe-9d57-aadac4927f2d",
+          "id": "51d9ee67-8824-45d9-b120-8defec5f1b1c",
           "position": {
             "x": 1200,
             "y": -200
@@ -1746,84 +1702,84 @@
           "interfaces": [
             {
               "name": "bank[0]",
-              "id": "71f1994b-1635-4a68-8de6-41f6346c7d2e",
+              "id": "269329c0-f00e-4b1b-b4b0-30db1afa8963",
               "direction": "inout",
               "side": "right",
               "sidePosition": 4
             },
             {
               "name": "bank[86]",
-              "id": "b0b3d6dd-9481-4aae-95fe-213aa37407a4",
+              "id": "2cbcae66-56bc-4de9-9d7f-5161bcb65c6b",
               "direction": "inout",
               "side": "left",
               "sidePosition": 1
             },
             {
               "name": "bank[87]",
-              "id": "7620cd59-359e-4bae-a098-2e9d1dc6e914",
+              "id": "f7950ada-f8a2-4905-b43b-d2677a36d016",
               "direction": "inout",
               "side": "right",
               "sidePosition": 18
             },
             {
               "name": "mgtx[224]",
-              "id": "59bace62-fcd7-4107-9c29-f49ddd2cc43b",
+              "id": "dc85c0c6-d404-4748-a52c-cbfc4ef2d9c9",
               "direction": "inout",
               "side": "left",
               "sidePosition": 19
             },
             {
               "name": "mgtx[225]",
-              "id": "7995360d-0aa0-483a-9bad-3a5198249abc",
+              "id": "16170c3e-dd58-471b-8588-39169dc8eaf5",
               "direction": "inout",
               "side": "left",
               "sidePosition": 20
             },
             {
               "name": "mgtx[226]",
-              "id": "26d0e31c-0dd2-4bf0-980d-e5d5546fb794",
+              "id": "393a496a-132e-48b0-a605-5865a261d693",
               "direction": "inout",
               "side": "right",
               "sidePosition": 20
             },
             {
               "name": "bank[64]",
-              "id": "d803f3b0-076c-4a90-9fe1-537ad7fa6e71",
+              "id": "11c50297-cf96-4507-b512-ba7071816b31",
               "direction": "inout",
               "side": "right",
               "sidePosition": 0
             },
             {
               "name": "bank[65]",
-              "id": "ddfbf76a-bbc6-4916-8ab5-2ec9b534a619",
+              "id": "e7d8e97b-83d6-44b8-8d08-a5dc8611af9e",
               "direction": "inout",
               "side": "right",
               "sidePosition": 1
             },
             {
               "name": "bank[66]",
-              "id": "3548de3f-596e-4d59-b0bc-2626b4f1c729",
+              "id": "fd785ce3-f037-4b41-b285-ddc92496ef9d",
               "direction": "inout",
               "side": "right",
               "sidePosition": 2
             },
             {
               "name": "bank[67]",
-              "id": "b9df7cd0-cee4-4ceb-9412-a14406b38254",
+              "id": "ef8d40be-41d3-4cd4-b597-a6f92094bd50",
               "direction": "inout",
               "side": "left",
               "sidePosition": 9
             },
             {
               "name": "bank[84]",
-              "id": "baf655c8-feed-4364-b24a-accdf73fbd30",
+              "id": "e1130901-e25e-48db-b3c1-c8f900a854b5",
               "direction": "inout",
               "side": "right",
               "sidePosition": 13
             },
             {
               "name": "jtag",
-              "id": "5f858317-4f75-4285-bcb3-193d3ddaa25d",
+              "id": "5a810151-6d06-4e6a-9ca7-9bf349545297",
               "direction": "inout",
               "side": "right",
               "sidePosition": 6
@@ -1835,7 +1791,7 @@
           "instanceName": "XCAU25P-2FFVB676I"
         },
         {
-          "id": "1acdcb58-2a45-4ab2-931d-82e458a0458e",
+          "id": "d557c9c0-b191-43f6-8e38-8ef2f323cee0",
           "position": {
             "x": 2100,
             "y": 3
@@ -1845,14 +1801,14 @@
           "interfaces": [
             {
               "name": "ARM JTAG 14",
-              "id": "7a830dd5-92f3-4ac4-924e-35896f6e0bb2",
+              "id": "4680b9c7-7de0-40a5-82d3-41e7c39f4c2b",
               "direction": "inout",
               "side": "left",
               "sidePosition": 0
             },
             {
               "name": "gpio",
-              "id": "a4602d10-3de8-4be9-8796-a973aa4d647c",
+              "id": "0127f247-aa41-420b-99d8-b7573fb3d554",
               "direction": "inout",
               "side": "right",
               "sidePosition": 0
@@ -1864,7 +1820,7 @@
           "instanceName": "JTAG Connector"
         },
         {
-          "id": "d2530f19-1b08-4024-91c4-86313fc9c049",
+          "id": "8cd261fb-8796-494c-ac9a-0f6ed08bf157",
           "position": {
             "x": 200,
             "y": -200
@@ -1874,14 +1830,14 @@
           "interfaces": [
             {
               "name": "usb",
-              "id": "9d51accd-51ff-4a5e-9fc1-575fd03f94c6",
+              "id": "28e11474-4248-4aa9-b5eb-093c38d8b00d",
               "direction": "inout",
               "side": "right",
               "sidePosition": 0
             },
             {
               "name": "usb-c",
-              "id": "8b9a6909-76d2-4ef0-b96f-ffa1538ba1b0",
+              "id": "db1aec91-2a6a-481c-a38e-7a71eead60b0",
               "direction": "inout",
               "side": "left",
               "sidePosition": 0
@@ -1893,7 +1849,7 @@
           "instanceName": "USB-C"
         },
         {
-          "id": "38e804b0-0a14-442b-b0dc-7e43ad3a986d",
+          "id": "3ae78252-ca74-448e-ad46-0f263017553c",
           "position": {
             "x": 600,
             "y": -200
@@ -1903,35 +1859,35 @@
           "interfaces": [
             {
               "name": "uart/mpsse[0]",
-              "id": "89900e1c-4e59-4b03-b4f6-5b63609d55e6",
+              "id": "6289542d-4b76-41cd-8788-5821bc346604",
               "direction": "inout",
               "side": "right",
               "sidePosition": 0
             },
             {
               "name": "uart/mpsse[1]",
-              "id": "03473675-7d45-48d6-9989-11043682b413",
+              "id": "95cbad36-8213-42e2-b471-5915e3171383",
               "direction": "inout",
               "side": "right",
               "sidePosition": 1
             },
             {
               "name": "usb",
-              "id": "f59a6998-2d73-4ad9-99c6-140a0f82ea19",
+              "id": "fc077cab-9537-40dc-bdb6-b9398754408d",
               "direction": "inout",
               "side": "left",
               "sidePosition": 0
             },
             {
               "name": "uart[2]",
-              "id": "84781d40-eebb-4092-b302-79822b67ae4c",
+              "id": "9b151250-34de-460b-9832-162d343dc6dd",
               "direction": "inout",
               "side": "right",
               "sidePosition": 2
             },
             {
               "name": "uart[3]",
-              "id": "d137f270-3e30-416f-8113-a611c814dd2b",
+              "id": "1fd9fba8-7bcf-4d7a-8f01-f37b0f1be76e",
               "direction": "inout",
               "side": "right",
               "sidePosition": 3
@@ -1943,7 +1899,7 @@
           "instanceName": "4xUART 2xMPSSE Bridge"
         },
         {
-          "id": "e9c966d8-0918-41db-8406-a713d2f61ac8",
+          "id": "0d561254-b331-45d6-8a69-2e49c11c4d94",
           "position": {
             "x": 600,
             "y": 106
@@ -1953,14 +1909,14 @@
           "interfaces": [
             {
               "name": "ethernet",
-              "id": "2a28e7e3-406d-4895-8d45-7b6bdfb12630",
+              "id": "599aace7-c7e4-4b59-a785-ecf7c4c7bfcd",
               "direction": "inout",
               "side": "left",
               "sidePosition": 0
             },
             {
               "name": "GbE",
-              "id": "fa837c25-31a4-4584-adc5-b21455cedfd9",
+              "id": "63e52ac5-a8ca-4cb2-b2c5-a2c6e1851d60",
               "direction": "inout",
               "side": "right",
               "sidePosition": 0
@@ -1972,7 +1928,7 @@
           "instanceName": "GbE Phy "
         },
         {
-          "id": "469dece3-2e7c-4472-8368-c7b384319b63",
+          "id": "d1bdb081-7d37-4eac-8f75-3391ace86e62",
           "position": {
             "x": 200,
             "y": 106
@@ -1982,14 +1938,14 @@
           "interfaces": [
             {
               "name": "rj45",
-              "id": "6dedcb7c-742e-4ca1-bb05-f8ce27ebbba5",
+              "id": "3905b6f7-9c07-4bab-991e-6d4d68ec9cf7",
               "direction": "inout",
               "side": "left",
               "sidePosition": 0
             },
             {
               "name": "ethernet",
-              "id": "ed1860e1-1718-4f10-bd1a-26f4e13fe7c8",
+              "id": "95f76bbc-e631-42db-88ad-4c2e5622468f",
               "direction": "inout",
               "side": "right",
               "sidePosition": 0
@@ -2001,7 +1957,7 @@
           "instanceName": "RJ45 Ethernet"
         },
         {
-          "id": "9e19c212-2763-495c-8e14-6695f35daf09",
+          "id": "62d1c175-5c4b-4729-b422-22435eba9d68",
           "position": {
             "x": 600,
             "y": 300
@@ -2011,7 +1967,7 @@
           "interfaces": [
             {
               "name": "hyperbus",
-              "id": "9d4cc470-c152-410d-b9ec-d3dda1cd94d0",
+              "id": "b12b84e0-209a-47e7-acc5-5de41796daa1",
               "direction": "inout",
               "side": "right",
               "sidePosition": 0
@@ -2023,7 +1979,7 @@
           "instanceName": "HyperRAM"
         },
         {
-          "id": "edef38f1-4ecc-408e-b0b8-697ed6155635",
+          "id": "700b7005-0ff7-46c3-975e-af46bde07cde",
           "position": {
             "x": 1701,
             "y": -64
@@ -2033,7 +1989,7 @@
           "interfaces": [
             {
               "name": "qspi",
-              "id": "0f988343-3512-418e-9ecb-546cdae8e6ba",
+              "id": "1b88301d-e115-464a-af36-534c0b80c42a",
               "direction": "inout",
               "side": "left",
               "sidePosition": 0
@@ -2045,7 +2001,7 @@
           "instanceName": "QSPI Flash"
         },
         {
-          "id": "53ccabf2-16aa-44e9-ba75-c4f28f2aafeb",
+          "id": "e0c54989-9f8a-4590-b57a-1f70a072f7e2",
           "position": {
             "x": 1700,
             "y": -250
@@ -2055,7 +2011,7 @@
           "interfaces": [
             {
               "name": "power",
-              "id": "1b12106f-714c-4fca-844f-cd07ab5f2b34",
+              "id": "b6136e1a-08b2-4377-9dc6-888ed9b01cd1",
               "direction": "inout",
               "side": "right",
               "sidePosition": 0
@@ -2067,7 +2023,7 @@
           "instanceName": "Board power distribution"
         },
         {
-          "id": "2356fc22-94ef-4dd1-a1ac-283a91dfc1ff",
+          "id": "dc647f95-3657-41ce-8c6d-2e18cd8767b4",
           "position": {
             "x": 2103,
             "y": 548
@@ -2077,14 +2033,14 @@
           "interfaces": [
             {
               "name": "gpio",
-              "id": "d1962208-c673-4484-8bac-7e6c1f332478",
+              "id": "4b3dfd45-3ca6-4d74-b3cd-74cb3c8ccb36",
               "direction": "inout",
               "side": "left",
               "sidePosition": 0
             },
             {
               "name": "wire to board",
-              "id": "6d5a0a0c-afa1-4f09-a880-0fad5e990ede",
+              "id": "b5264c53-45d7-4cda-8962-4575fc29081d",
               "direction": "inout",
               "side": "right",
               "sidePosition": 0
@@ -2096,7 +2052,7 @@
           "instanceName": "I3C Connector"
         },
         {
-          "id": "fc654185-8c4d-44cf-9174-b776eb086479",
+          "id": "62955abd-7d26-4de2-95f5-a56c1064cb4a",
           "position": {
             "x": 200,
             "y": 550
@@ -2106,14 +2062,14 @@
           "interfaces": [
             {
               "name": "sdio",
-              "id": "8850ac63-410a-40c6-a42a-3cdd780df1bc",
+              "id": "f4611ff7-98fe-4440-bbba-4815ddb6756a",
               "direction": "inout",
               "side": "right",
               "sidePosition": 0
             },
             {
               "name": "micro sd-card",
-              "id": "8ac8712f-e9d4-4330-8f08-90860a33f867",
+              "id": "0feedefc-8aa2-4934-9b3c-ebf429a74213",
               "direction": "inout",
               "side": "left",
               "sidePosition": 0
@@ -2125,7 +2081,7 @@
           "instanceName": "uSD Card"
         },
         {
-          "id": "b23b4a8f-2e93-4a80-9c66-0ad2b5c72676",
+          "id": "c27d6c7c-35b1-45ba-9ac3-560ba9dd4f94",
           "position": {
             "x": 200,
             "y": 800
@@ -2135,21 +2091,21 @@
           "interfaces": [
             {
               "name": "hdmi",
-              "id": "5a5b177a-e1f5-4354-ba26-a8b5966513f7",
+              "id": "761a6149-80d6-414d-b7e6-c994d4829dcf",
               "direction": "input",
               "side": "right",
               "sidePosition": 0
             },
             {
               "name": "ddc",
-              "id": "9e2ab3a4-3bd2-463c-9cda-4ef7baefd853",
+              "id": "feb4dc20-c46c-4ad9-8e52-f37820b448e1",
               "direction": "inout",
               "side": "left",
               "sidePosition": 0
             },
             {
               "name": "hdmi",
-              "id": "1292a28a-de9c-47e9-b289-ccbfecfc7ee0",
+              "id": "5bec84a0-c11e-41b9-a8cf-c3df45974fe8",
               "direction": "output",
               "side": "left",
               "sidePosition": 1
@@ -2161,7 +2117,7 @@
           "instanceName": "HDMI Output"
         },
         {
-          "id": "17f95234-2a81-4fd4-9973-a86bff070dfc",
+          "id": "4e4c9266-c021-4adb-b1d7-3a482f56331f",
           "position": {
             "x": 1200,
             "y": -450
@@ -2171,14 +2127,14 @@
           "interfaces": [
             {
               "name": "ddr",
-              "id": "24750d64-fb2b-4b52-80d8-c6f673a29417",
+              "id": "d9c9cf6e-deda-4a47-8fc3-088b23bc70ad",
               "direction": "inout",
               "side": "right",
               "sidePosition": 0
             },
             {
               "name": "rdimm",
-              "id": "dc305870-335d-4c30-8ec7-cd0b2e6d7ea9",
+              "id": "7bb9cdaa-eb8a-4ed7-b7dc-e82f2e1ec69f",
               "direction": "inout",
               "side": "left",
               "sidePosition": 0
@@ -2190,7 +2146,7 @@
           "instanceName": "RDIMM DDR5"
         },
         {
-          "id": "24f51372-b919-4d3a-b714-4e568a761167",
+          "id": "9b6aaf85-b6c2-4655-89bb-7d05527ee86c",
           "position": {
             "x": 600,
             "y": -400
@@ -2200,7 +2156,7 @@
           "interfaces": [
             {
               "name": "gpio",
-              "id": "8dced573-857d-4670-9e13-f775bd54304d",
+              "id": "cb5b1fd8-5bb8-424a-b280-617b49b37088",
               "direction": "inout",
               "side": "right",
               "sidePosition": 0
@@ -2209,7 +2165,7 @@
           "properties": [
             {
               "name": "address (gpio)",
-              "id": "c31cde2c-a59d-4f24-909a-81244ddc97d3",
+              "id": "c81cdee3-b1a7-47fa-a335-b8e6cd75f3b1",
               "value": "J9"
             }
           ],
@@ -2218,7 +2174,7 @@
           "instanceName": "User LED"
         },
         {
-          "id": "1f6b613b-f5c5-4623-a7aa-5a4b68653c3e",
+          "id": "e2e0c57f-d439-4423-ad99-baeb3d0d2d41",
           "position": {
             "x": 600,
             "y": 550
@@ -2228,14 +2184,14 @@
           "interfaces": [
             {
               "name": "sdio",
-              "id": "c8956f9a-b20a-4ed2-a00b-f95fea5b98cf",
+              "id": "e122aa60-5432-4950-9dcd-5c340e741c02",
               "direction": "input",
               "side": "left",
               "sidePosition": 0
             },
             {
               "name": "sdio",
-              "id": "07bb162c-9719-4ff0-a6a4-dac8d5ba07c3",
+              "id": "2861d44b-e26b-4248-939b-dccd30789c0c",
               "direction": "output",
               "side": "right",
               "sidePosition": 0
@@ -2247,7 +2203,7 @@
           "instanceName": "SDIO Level Converter"
         },
         {
-          "id": "f6b1754c-9d11-4a30-bdef-1d2672322077",
+          "id": "cc67e9d5-4570-4d44-8ed7-cfc155e80606",
           "position": {
             "x": 1200,
             "y": 700
@@ -2257,21 +2213,21 @@
           "interfaces": [
             {
               "name": "pcie",
-              "id": "918d8e30-a301-48fc-afe1-3babae5da30c",
+              "id": "1a85c55d-7601-41da-b71d-94ec179823a8",
               "direction": "input",
               "side": "left",
               "sidePosition": 0
             },
             {
               "name": "pcie x4",
-              "id": "b00dc4e2-ba9a-402a-8538-f4e213cf6f8f",
+              "id": "c5feb569-f306-4c3c-a917-ac512195f6cb",
               "direction": "inout",
               "side": "right",
               "sidePosition": 1
             },
             {
               "name": "clk",
-              "id": "c2f69e00-3507-49ee-b5b8-528d8860a7a3",
+              "id": "a56d138e-899a-4b65-89b7-1c7731ea6772",
               "direction": "inout",
               "side": "left",
               "sidePosition": 1
@@ -2283,7 +2239,7 @@
           "instanceName": "PCIe x8 Edge Connector"
         },
         {
-          "id": "ec1dfe89-9c25-46e5-9ac3-1e0e0e12f631",
+          "id": "d0dba67d-2c54-48c4-8952-0eabab255a08",
           "position": {
             "x": 600,
             "y": 800
@@ -2293,14 +2249,14 @@
           "interfaces": [
             {
               "name": "hdmi",
-              "id": "91c94c83-864b-4fe4-9a2b-ff8f1ad05ae9",
+              "id": "e1eeba06-9134-4307-b2d8-e5117b5e44e4",
               "direction": "input",
               "side": "right",
               "sidePosition": 0
             },
             {
               "name": "hdmi",
-              "id": "cbe35c26-1649-4311-aa3d-30afa7a0f6cd",
+              "id": "2cf5e029-c3fb-4b94-8ec7-6663d27ec86e",
               "direction": "output",
               "side": "left",
               "sidePosition": 0
@@ -2312,7 +2268,7 @@
           "instanceName": "HDMI Retimer"
         },
         {
-          "id": "b6506380-cb03-4a01-ac8b-4b505a4a868c",
+          "id": "e4e6076a-881e-455b-92eb-5e56c6e2e915",
           "position": {
             "x": 2100,
             "y": 800
@@ -2322,14 +2278,14 @@
           "interfaces": [
             {
               "name": "gpio",
-              "id": "8a00611b-7ecd-4532-a7a3-72dc8834cbfb",
+              "id": "3961f521-383d-4a3a-8c2e-0324f2a8241f",
               "direction": "inout",
               "side": "left",
               "sidePosition": 0
             },
             {
               "name": "wire to board",
-              "id": "06971b07-e989-48d7-941a-2cba53718d4f",
+              "id": "7be0e744-823d-42b8-8c3b-ae1735b3999c",
               "direction": "inout",
               "side": "right",
               "sidePosition": 0
@@ -2341,7 +2297,7 @@
           "instanceName": "HDMI Input"
         },
         {
-          "id": "131ed96f-281f-41e8-93b7-e230ad856c08",
+          "id": "df8a8169-d2f8-4320-83c0-83bff09ab4cf",
           "position": {
             "x": 1747,
             "y": 151
@@ -2351,7 +2307,7 @@
           "interfaces": [
             {
               "name": "i2c",
-              "id": "6c3ec0d0-57f5-4906-a4c0-ee6d7af89d89",
+              "id": "05932826-e4d8-45d8-bbc9-e7fac45512a8",
               "direction": "inout",
               "side": "left",
               "sidePosition": 0
@@ -2360,7 +2316,7 @@
           "properties": [
             {
               "name": "address (i2c)",
-              "id": "73f07dcb-fb64-4006-8700-acc57d0a9c2e",
+              "id": "083044a4-068b-43e8-9d93-14ec29e3bd9e",
               "value": "0x50"
             }
           ],
@@ -2369,7 +2325,7 @@
           "instanceName": "UUID EEPROM"
         },
         {
-          "id": "2d76da43-05e6-4fd8-b74c-4238cbd23221",
+          "id": "3d7a7b1f-5dec-4e54-a114-4010eaa8ebd6",
           "position": {
             "x": 1746,
             "y": 342
@@ -2379,7 +2335,7 @@
           "interfaces": [
             {
               "name": "i2c",
-              "id": "fb8fceda-a381-4afb-9a66-ee37908fee94",
+              "id": "85062585-7737-47b2-bea9-0e2e7178bc41",
               "direction": "inout",
               "side": "left",
               "sidePosition": 0
@@ -2388,7 +2344,7 @@
           "properties": [
             {
               "name": "address (i2c)",
-              "id": "d086958c-f374-488f-8cdc-569b23dac41f",
+              "id": "f91d9e8c-dcdb-444f-b10d-0574f091fb06",
               "value": "0x4c"
             }
           ],
@@ -2397,7 +2353,7 @@
           "instanceName": "Temperature Sensor"
         },
         {
-          "id": "54aaad6d-2ec6-49f5-a02c-8c61457cfd42",
+          "id": "4a5de02d-385f-4645-a7cc-0b5f7738a436",
           "position": {
             "x": 1702,
             "y": 548
@@ -2407,14 +2363,14 @@
           "interfaces": [
             {
               "name": "i2c high",
-              "id": "cffd698f-a730-4fe3-9433-7ba9e4678144",
+              "id": "210e5c93-81cd-4dc1-850b-f378a0e287f2",
               "direction": "inout",
               "side": "left",
               "sidePosition": 0
             },
             {
               "name": "i2c low",
-              "id": "2b0b537b-9858-4a19-9e01-63f9a02cde06",
+              "id": "8d38a4da-eda3-4912-86de-f9ac7fe59365",
               "direction": "inout",
               "side": "right",
               "sidePosition": 0
@@ -2428,49 +2384,49 @@
       ],
       "connections": [
         {
-          "id": "39474863-c504-49ac-b7c5-5513b1ce5cfc",
-          "from": "c238fad0-7f35-45b2-afab-ec8703de9f34",
-          "to": "1b12106f-714c-4fca-844f-cd07ab5f2b34"
+          "id": "4e2eafb7-d562-4f67-8f0d-7b45b36621e4",
+          "from": "495d4084-87a2-4eab-a927-49767cf7151a",
+          "to": "b6136e1a-08b2-4377-9dc6-888ed9b01cd1"
         },
         {
-          "id": "1a057ce4-aa36-4ff9-9ad3-c99dd8f8755e",
-          "from": "ed1860e1-1718-4f10-bd1a-26f4e13fe7c8",
-          "to": "2a28e7e3-406d-4895-8d45-7b6bdfb12630"
+          "id": "48fe8dde-780f-4ceb-8abb-03d3dbc7b912",
+          "from": "95f76bbc-e631-42db-88ad-4c2e5622468f",
+          "to": "599aace7-c7e4-4b59-a785-ecf7c4c7bfcd"
         },
         {
-          "id": "efeb15a4-9d69-444e-9b5f-55b7d4117440",
-          "from": "9d51accd-51ff-4a5e-9fc1-575fd03f94c6",
-          "to": "f59a6998-2d73-4ad9-99c6-140a0f82ea19"
+          "id": "141341d4-2b78-413f-b3f8-d378e47cbdfb",
+          "from": "28e11474-4248-4aa9-b5eb-093c38d8b00d",
+          "to": "fc077cab-9537-40dc-bdb6-b9398754408d"
         },
         {
-          "id": "481b6953-20d5-4a9d-93ed-f97b064107e8",
-          "from": "d803f3b0-076c-4a90-9fe1-537ad7fa6e71",
-          "to": "24750d64-fb2b-4b52-80d8-c6f673a29417"
+          "id": "63ed1fc4-3bf0-48f4-9d8c-ebbe8d90b6ab",
+          "from": "11c50297-cf96-4507-b512-ba7071816b31",
+          "to": "d9c9cf6e-deda-4a47-8fc3-088b23bc70ad"
         },
         {
-          "id": "cf01f51b-4ded-422d-ac10-2fbdabd1c7f8",
-          "from": "ddfbf76a-bbc6-4916-8ab5-2ec9b534a619",
-          "to": "24750d64-fb2b-4b52-80d8-c6f673a29417"
+          "id": "a5ef012e-2f3f-4c44-a5da-fe5ec32a54f7",
+          "from": "e7d8e97b-83d6-44b8-8d08-a5dc8611af9e",
+          "to": "d9c9cf6e-deda-4a47-8fc3-088b23bc70ad"
         },
         {
-          "id": "1e46397d-2149-40bb-87e5-ebc320154f4f",
-          "from": "3548de3f-596e-4d59-b0bc-2626b4f1c729",
-          "to": "24750d64-fb2b-4b52-80d8-c6f673a29417"
+          "id": "69cd05ca-38c7-49ed-b013-a188a5222378",
+          "from": "fd785ce3-f037-4b41-b285-ddc92496ef9d",
+          "to": "d9c9cf6e-deda-4a47-8fc3-088b23bc70ad"
         },
         {
-          "id": "a268c864-2b0a-48f5-be48-fb25ff6dc68e",
-          "from": "71f1994b-1635-4a68-8de6-41f6346c7d2e",
-          "to": "0f988343-3512-418e-9ecb-546cdae8e6ba"
+          "id": "164565d3-28dc-42f4-a6ef-ffbf2c3233d2",
+          "from": "269329c0-f00e-4b1b-b4b0-30db1afa8963",
+          "to": "1b88301d-e115-464a-af36-534c0b80c42a"
         },
         {
-          "id": "bd37f3dd-7d29-47f1-aa11-12d3a4ca163a",
-          "from": "8850ac63-410a-40c6-a42a-3cdd780df1bc",
-          "to": "c8956f9a-b20a-4ed2-a00b-f95fea5b98cf"
+          "id": "e2817e1f-8b61-4774-93c5-f1d4b71cc2a2",
+          "from": "f4611ff7-98fe-4440-bbba-4815ddb6756a",
+          "to": "e122aa60-5432-4950-9dcd-5c340e741c02"
         },
         {
-          "id": "59e36777-bdd9-44e1-9c07-05ed2ca06739",
-          "from": "59bace62-fcd7-4107-9c29-f49ddd2cc43b",
-          "to": "918d8e30-a301-48fc-afe1-3babae5da30c",
+          "id": "cc458fc2-0477-48c3-9c59-caff47c7f7cd",
+          "from": "dc85c0c6-d404-4748-a52c-cbfc4ef2d9c9",
+          "to": "1a85c55d-7601-41da-b71d-94ec179823a8",
           "anchors": [
             {
               "x": 1168,
@@ -2483,9 +2439,9 @@
           ]
         },
         {
-          "id": "0bf18566-c8b1-4228-b80d-369d95abf4ac",
-          "from": "7995360d-0aa0-483a-9bad-3a5198249abc",
-          "to": "918d8e30-a301-48fc-afe1-3babae5da30c",
+          "id": "2f18c1f7-8167-46ff-891e-971466e8a12f",
+          "from": "16170c3e-dd58-471b-8588-39169dc8eaf5",
+          "to": "1a85c55d-7601-41da-b71d-94ec179823a8",
           "anchors": [
             {
               "x": 1168,
@@ -2498,9 +2454,9 @@
           ]
         },
         {
-          "id": "a150cb57-a02a-463f-9103-3c97d6e653ac",
-          "from": "c2f69e00-3507-49ee-b5b8-528d8860a7a3",
-          "to": "7995360d-0aa0-483a-9bad-3a5198249abc",
+          "id": "ddf1bb09-7929-408c-b1a7-f601c521c909",
+          "from": "a56d138e-899a-4b65-89b7-1c7731ea6772",
+          "to": "16170c3e-dd58-471b-8588-39169dc8eaf5",
           "anchors": [
             {
               "x": 1166,
@@ -2513,14 +2469,14 @@
           ]
         },
         {
-          "id": "bbe75294-27c4-4dfd-86b4-7058031d4fa2",
-          "from": "cbe35c26-1649-4311-aa3d-30afa7a0f6cd",
-          "to": "5a5b177a-e1f5-4354-ba26-a8b5966513f7"
+          "id": "d9b2c781-2d5b-4887-b51a-584748e4476b",
+          "from": "2cf5e029-c3fb-4b94-8ec7-6663d27ec86e",
+          "to": "761a6149-80d6-414d-b7e6-c994d4829dcf"
         },
         {
-          "id": "6e264860-4118-4554-aa42-16a51585344c",
-          "from": "26d0e31c-0dd2-4bf0-980d-e5d5546fb794",
-          "to": "91c94c83-864b-4fe4-9a2b-ff8f1ad05ae9",
+          "id": "51a50547-c20a-4ff9-90f7-7f09d06893e9",
+          "from": "393a496a-132e-48b0-a605-5865a261d693",
+          "to": "e1eeba06-9134-4307-b2d8-e5117b5e44e4",
           "anchors": [
             {
               "x": 1556,
@@ -2533,9 +2489,9 @@
           ]
         },
         {
-          "id": "275b205e-31fe-4566-b8ad-985a91c983e4",
-          "from": "5f858317-4f75-4285-bcb3-193d3ddaa25d",
-          "to": "7a830dd5-92f3-4ac4-924e-35896f6e0bb2",
+          "id": "93644687-0f06-4213-a236-a0b4c829c322",
+          "from": "5a810151-6d06-4e6a-9ca7-9bf349545297",
+          "to": "4680b9c7-7de0-40a5-82d3-41e7c39f4c2b",
           "anchors": [
             {
               "x": 1499,
@@ -2544,24 +2500,24 @@
           ]
         },
         {
-          "id": "d2cea54b-acaf-4170-b1b9-69d600f8c353",
-          "from": "fa837c25-31a4-4584-adc5-b21455cedfd9",
-          "to": "b9df7cd0-cee4-4ceb-9412-a14406b38254"
+          "id": "61f54a9c-9656-416f-a10b-4aaf29806826",
+          "from": "63e52ac5-a8ca-4cb2-b2c5-a2c6e1851d60",
+          "to": "ef8d40be-41d3-4cd4-b597-a6f92094bd50"
         },
         {
-          "id": "d1e68a29-a5a8-4a07-91a6-3c8571be27c0",
-          "from": "9d4cc470-c152-410d-b9ec-d3dda1cd94d0",
-          "to": "b9df7cd0-cee4-4ceb-9412-a14406b38254"
+          "id": "658755a2-884f-4a8d-9624-db6dec2c20b5",
+          "from": "b12b84e0-209a-47e7-acc5-5de41796daa1",
+          "to": "ef8d40be-41d3-4cd4-b597-a6f92094bd50"
         },
         {
-          "id": "444e45ca-e213-4010-b787-7679cd0131ba",
-          "from": "07bb162c-9719-4ff0-a6a4-dac8d5ba07c3",
-          "to": "b9df7cd0-cee4-4ceb-9412-a14406b38254"
+          "id": "cbad1c94-a905-4804-a5fc-854c6667aaa2",
+          "from": "2861d44b-e26b-4248-939b-dccd30789c0c",
+          "to": "ef8d40be-41d3-4cd4-b597-a6f92094bd50"
         },
         {
-          "id": "6b41d234-1a59-4228-8816-cd279730bb22",
-          "from": "baf655c8-feed-4364-b24a-accdf73fbd30",
-          "to": "6c3ec0d0-57f5-4906-a4c0-ee6d7af89d89",
+          "id": "b7f74ef4-2ece-47f0-bf0c-6a80d8658505",
+          "from": "e1130901-e25e-48db-b3c1-c8f900a854b5",
+          "to": "05932826-e4d8-45d8-bbc9-e7fac45512a8",
           "anchors": [
             {
               "x": 1498,
@@ -2570,9 +2526,9 @@
           ]
         },
         {
-          "id": "5c7b604b-68e6-4b10-89d8-43917e79dd2d",
-          "from": "fb8fceda-a381-4afb-9a66-ee37908fee94",
-          "to": "baf655c8-feed-4364-b24a-accdf73fbd30",
+          "id": "7828199e-8154-4fab-8e53-7775844ad3fa",
+          "from": "85062585-7737-47b2-bea9-0e2e7178bc41",
+          "to": "e1130901-e25e-48db-b3c1-c8f900a854b5",
           "anchors": [
             {
               "x": 1750,
@@ -2581,9 +2537,9 @@
           ]
         },
         {
-          "id": "b8f4033a-997e-4add-ace1-b786bb9cee9f",
-          "from": "26d0e31c-0dd2-4bf0-980d-e5d5546fb794",
-          "to": "8a00611b-7ecd-4532-a7a3-72dc8834cbfb",
+          "id": "22cb2f81-da5b-44f4-b667-c79ff0580c88",
+          "from": "393a496a-132e-48b0-a605-5865a261d693",
+          "to": "3961f521-383d-4a3a-8c2e-0324f2a8241f",
           "anchors": [
             {
               "x": 1556,
@@ -2596,9 +2552,9 @@
           ]
         },
         {
-          "id": "5b22746c-8b40-4963-8d58-df4c17feb018",
-          "from": "84781d40-eebb-4092-b302-79822b67ae4c",
-          "to": "b0b3d6dd-9481-4aae-95fe-213aa37407a4",
+          "id": "68759908-c24e-43fc-a1b9-439b920bc160",
+          "from": "9b151250-34de-460b-9832-162d343dc6dd",
+          "to": "2cbcae66-56bc-4de9-9d7f-5161bcb65c6b",
           "anchors": [
             {
               "x": 897,
@@ -2607,9 +2563,9 @@
           ]
         },
         {
-          "id": "a56e9af9-71e4-4d6e-8eb9-649f71bcb15b",
-          "from": "d137f270-3e30-416f-8113-a611c814dd2b",
-          "to": "b0b3d6dd-9481-4aae-95fe-213aa37407a4",
+          "id": "e40d5183-06a5-4fb5-b8e0-ae49b565cd44",
+          "from": "1fd9fba8-7bcf-4d7a-8f01-f37b0f1be76e",
+          "to": "2cbcae66-56bc-4de9-9d7f-5161bcb65c6b",
           "anchors": [
             {
               "x": 897,
@@ -2618,14 +2574,14 @@
           ]
         },
         {
-          "id": "4c938134-7af9-4eb5-830f-ea05b9f7f6ab",
-          "from": "03473675-7d45-48d6-9989-11043682b413",
-          "to": "b0b3d6dd-9481-4aae-95fe-213aa37407a4"
+          "id": "0820683f-a308-4a24-ae5c-89f5ffb1e95f",
+          "from": "95cbad36-8213-42e2-b471-5915e3171383",
+          "to": "2cbcae66-56bc-4de9-9d7f-5161bcb65c6b"
         },
         {
-          "id": "7b6cd2e9-21d1-4bb6-ad5f-434d4b69f7a2",
-          "from": "89900e1c-4e59-4b03-b4f6-5b63609d55e6",
-          "to": "b0b3d6dd-9481-4aae-95fe-213aa37407a4",
+          "id": "8c4c1205-a294-40c1-bac8-1368f6407127",
+          "from": "6289542d-4b76-41cd-8788-5821bc346604",
+          "to": "2cbcae66-56bc-4de9-9d7f-5161bcb65c6b",
           "anchors": [
             {
               "x": 898,
@@ -2634,9 +2590,9 @@
           ]
         },
         {
-          "id": "41d61b30-c769-485c-a589-0347508b9bbe",
-          "from": "8dced573-857d-4670-9e13-f775bd54304d",
-          "to": "b0b3d6dd-9481-4aae-95fe-213aa37407a4",
+          "id": "83d15deb-11ae-4960-b84b-b0e922687fb8",
+          "from": "cb5b1fd8-5bb8-424a-b280-617b49b37088",
+          "to": "2cbcae66-56bc-4de9-9d7f-5161bcb65c6b",
           "anchors": [
             {
               "x": 898,
@@ -2645,9 +2601,9 @@
           ]
         },
         {
-          "id": "9b8a2c0a-3ad0-4b36-b67b-057ae9fa919a",
-          "from": "2b0b537b-9858-4a19-9e01-63f9a02cde06",
-          "to": "d1962208-c673-4484-8bac-7e6c1f332478",
+          "id": "1637bb30-9a23-49b2-b607-6ef36a77111b",
+          "from": "8d38a4da-eda3-4912-86de-f9ac7fe59365",
+          "to": "4b3dfd45-3ca6-4d74-b3cd-74cb3c8ccb36",
           "anchors": [
             {
               "x": 2107,
@@ -2656,9 +2612,9 @@
           ]
         },
         {
-          "id": "908f9411-586f-474c-9fd7-bd70b05e6fc3",
-          "from": "cffd698f-a730-4fe3-9433-7ba9e4678144",
-          "to": "7620cd59-359e-4bae-a098-2e9d1dc6e914",
+          "id": "5661ffcf-6d3f-4c53-93e9-14cf74cd5b52",
+          "from": "210e5c93-81cd-4dc1-850b-f378a0e287f2",
+          "to": "f7950ada-f8a2-4905-b43b-d2677a36d016",
           "anchors": [
             {
               "x": 1705,
